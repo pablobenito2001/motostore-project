@@ -51,7 +51,7 @@
             font-family: var(--secundary-font);
             font-size: 1.5625em;
             font-weight: lighter;
-            margin-top: .9375rem;
+            padding: .9375rem 0;
         }
     }
 </style>

@@ -38,7 +38,7 @@
         }
         &-branch{
             font-weight: 600;
-            font-size: 1.875em;
+            font-size: clamp(.7em, 1.875vw, 1.875em);
             text-transform: lowercase;
         }
         &-navigator{

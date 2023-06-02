@@ -9,7 +9,7 @@
 <style lang='scss' scoped>
     .CardWrapper{
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(min(100%, 400px), 1fr));
         grid-auto-rows: auto;
         gap: 1.25rem;
         padding: var(--pad);

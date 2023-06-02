@@ -40,20 +40,24 @@
             flex-wrap: wrap;
         }
         &-title{
-            font-size: 11.625em;
+            font-size: clamp(3.5em, 11.625vw, 11.625em);
         }
         &-region{
             font-size: 1.25em;
+            @media screen and (max-width: 450px) {
+                display: none;
+            }
         }
         &-caption{
             padding: .3125rem 1.25rem;
             color: var(--white);
             background-color: var(--blue);
             display: inline-block;
-            font-size: 1.8em;
+            font-size: clamp(1em, 1.8vw, 1.8em);
         }
         &-newPhone{
-            font-size: 4.6875em;
+            font-size: clamp(2em, 4.6875vw, 4.6875em);
+            margin-bottom: .625rem;
         }
         &-video{
             width: 100%;
