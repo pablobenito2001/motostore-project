@@ -8,7 +8,7 @@
     /* padding */
     --pad: 35px;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 800px) {
     :root{
         --pad: 10px;
     }

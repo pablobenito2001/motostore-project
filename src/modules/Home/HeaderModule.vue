@@ -11,8 +11,7 @@
             <div class="Header-new">
                 <h2 class="Header-text Header-newPhone">motorola edge 40 pro</h2>
                 <video class="Header-video" autoplay muted loop>
-                    <source src="/video/edge_40_pro_max.mp4" type="video/mp4" media="(max-width: 800px)">
-                    <source src="/video/edge_40_pro_min.mp4" type="video/mp4" media="(max-width: 450px)">
+                    <source src="/video/edge_40_pro_min.mp4" type="video/mp4" media="(min-width: 800px)">
                 </video>
             </div>
         </div>
@@ -58,8 +57,7 @@
         }
         &-video{
             width: 100%;
-            min-height: 800px;
-            object-fit: cover;
+            min-height: 50rem;
         }
     }
 </style>

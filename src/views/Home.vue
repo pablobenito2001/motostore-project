@@ -1,10 +1,10 @@
 <template>
     <NavModule />
-    <HeaderModule />
+    <HomeModule />
 </template>
 <script lang='ts' setup>
     import NavModule from '../modules/Nav/NavModule.vue';
-    import HeaderModule from '../modules/Home/HeaderModule.vue';
+    import HomeModule from '../modules/Home/HomeModule.vue';
 </script>
 <style lang='scss' scoped>
 

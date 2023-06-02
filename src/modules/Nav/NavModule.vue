@@ -24,6 +24,10 @@
     .Nav{
         padding: 1.25rem 1.25rem;
         background-color: var(--white);
+        min-width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 5;
         &-container{
             max-width: 2100px;
             margin: auto;
