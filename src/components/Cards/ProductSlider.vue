@@ -4,21 +4,35 @@
             <slot />
         </div>
         <div class="ProductSlider-container">
-            <div class="ProductSlider-productBox">  
+            <div class="ProductSlider-slider ProductSlider-slider--left" @click="scrollLeft">
+                <svg width="30" height="30" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="ProductSlider-arrow">
+                    <path d="M15.2953 28.0113L38.0707 5.23711C39.1688 4.13906 40.95 4.13906 42.0481 5.23711L44.7047 7.89375C45.8016 8.99063 45.8028 10.7672 44.7094 11.8664L26.659 30L44.7082 48.1348C45.8028 49.234 45.8004 51.0105 44.7035 52.1074L42.0469 54.7641C40.9489 55.8621 39.1676 55.8621 38.0696 54.7641L15.2953 31.9887C14.1973 30.8906 14.1973 29.1094 15.2953 28.0113Z" fill="#F6F6F6"/>
+                </svg>
+            </div>
+            <div class="ProductSlider-productBox" :style="{ transform: `translateX(-${ move }px)` }">  
                 <MiniProduct 
                 v-for="mini in products"
                 :key="mini.id"
                 :name="mini.name"
                 :picture="mini.picture"
                 :price="mini.price"
+                class="ProductSlider-product"
                 />
+            </div>
+            <div class="ProductSlider-slider ProductSlider-slider--right" @click.prevent="scrollRight">
+                <svg width="30" height="30" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="ProductSlider-arrow">
+                    <path d="M15.2953 28.0113L38.0707 5.23711C39.1688 4.13906 40.95 4.13906 42.0481 5.23711L44.7047 7.89375C45.8016 8.99063 45.8028 10.7672 44.7094 11.8664L26.659 30L44.7082 48.1348C45.8028 49.234 45.8004 51.0105 44.7035 52.1074L42.0469 54.7641C40.9489 55.8621 39.1676 55.8621 38.0696 54.7641L15.2953 31.9887C14.1973 30.8906 14.1973 29.1094 15.2953 28.0113Z" fill="#F6F6F6"/>
+                </svg>
             </div>
         </div>
     </div>
 </template>
 <script lang='ts' setup>
+    import { ref, onMounted } from 'vue';
+
     import MiniProduct from './MiniProduct.vue';
 
+    // props
     interface Props{
         source: string;
         color: string;
@@ -26,24 +40,69 @@
     }
 
     defineProps<Props>();
+
+    // slider
+    const move = ref<number>(0);
+
+    function scrollRight(e: MouseEvent): void{
+        move.value += 460;
+    }
+    function scrollLeft(e: MouseEvent): void{
+        if(move.value === 0) return;
+        else move.value -= 460;   
+    }
 </script>
 <style lang='scss' scoped>
     .ProductSlider{
         display: grid;
-        grid-template-columns: 28.125rem 100%;
+        grid-template-columns: 28.125rem calc(100% - 28.125rem - 10px);
         grid-template-rows: 28.125rem;
         gap: .625rem;
+        overflow: hidden;
         &-header{
             display: flex;
             justify-content: center;
             align-items: center;
             background-blend-mode: difference normal;
+            z-index: 2;
+        }
+        &-container{
+            
+            position: relative;
         }
         &-productBox{
-            display: grid;
-            grid-template-columns: repeat(auto-fill, 28.125rem);
-            grid-template-rows: 28.125rem;
+            display: flex;
+            flex-wrap: nowrap;
             gap: .625rem;
+            transition: transform .6s cubic-bezier(0.215, 0.610, 0.355, 1);
+        }
+        &-product{
+            flex: 1 0 auto;
+            max-width: 28.125rem;
+            width: 100%;
+            height: 28.125rem;
+        }
+        &-slider{
+            position: absolute;
+            padding: 10px;
+            z-index: 2;
+            background-color: var(--blue);
+            cursor: pointer;
+            transition: transform .6s cubic-bezier(0.075, 0.82, 0.165, 1);
+            &--left{
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+            &--right{
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%) rotate(180deg);
+                
+            }
+            &:hover .ProductSlider-arrow{
+                transform: translateX(-2px);
+            }
         }
     }
 

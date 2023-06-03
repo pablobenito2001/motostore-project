@@ -3,7 +3,7 @@ export default {
         try{
             const json = await fetch(`/data/${ source }.json`);
             const res = await json.json();
-            return  res;
+            return res;
         }catch(e){
             if(e instanceof Error) throw e
             else throw 'Hubo un error';

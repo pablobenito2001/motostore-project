@@ -4,7 +4,9 @@
         <CardModule />
         <Suspense>
             <NewPhonesModule />
-            <template #fallback><span class="SD">Loading</span></template>
+            <template #fallback>
+                <LoaderSections />
+            </template>
         </Suspense>
         <ProductsHomeModule />
     </main>
@@ -14,15 +16,10 @@
     import CardModule from './CardModule.vue';
     import NewPhonesModule from './NewPhonesModule.vue';
     import ProductsHomeModule from './ProductsHomeModule.vue';
-    import Loader from '../../components/Loader/Loader.vue';
+    import LoaderSections from '../../components/Loader/LoaderSections.vue';
 </script>
 <style lang='scss' scoped>
     .Home{
         padding: 4.75rem 0 0 0;
-    }
-
-    .SD{
-        font-size: 2em;
-        color: var(--blue);
     }
 </style>

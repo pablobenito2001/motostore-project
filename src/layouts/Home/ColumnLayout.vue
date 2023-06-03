@@ -13,7 +13,6 @@
         max-width: 2000px;
         margin: auto;
         background-color: var(--white);
-        overflow: hidden;
         &-container{
             display: grid;
             grid-template-columns: 1fr;
@@ -21,6 +20,7 @@
             gap: 2.1875rem;
             padding: var(--pad);
             background-color: var(--white);
+            overflow: hidden;
             @media screen and (max-width: 850px) {
                 gap: .625rem;
             }

@@ -1,5 +1,5 @@
 <template>
-    <div class="MiniProduct">
+    <div class="MiniProduct" :class="$attrs.class">
         <img :src="picture" :alt="`${ name }' pic'`" class="MiniProduct-thumbnail">
         <div class="MiniProduct-indoBox">
             <span class="MiniProduct-price">${{ price }},00</span>
@@ -17,18 +17,17 @@
 </script>
 <style lang='scss' scoped>
     .MiniProduct{
-        padding: 10px;
+        padding: .625rem;
         background-color: var(--white);
         cursor: pointer;
-        box-shadow: 3px 3px 4px #0000002c;
-        transition: transform 0.6s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
-        &:hover{
-            transform: translateY(-5px);
-            box-shadow: 5px 5px 4px #0000002c;
+        border: solid 1px var(--blue);
+        &:hover .MiniProduct-thumbnail{
+            transform: translateY(-10px);
         }
         &-thumbnail{
-            max-height: 300px;
+            max-height: 18.75rem;
             object-fit: contain;
+            transition: transform .6s cubic-bezier(0.075, 0.82, 0.165, 1);
         }
         &-price{
             display: inline-block;

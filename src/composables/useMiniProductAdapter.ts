@@ -1,8 +1,8 @@
 import MiniProduct from "../insterfaces/MiniProduct";
 import API from "../services/API";
-import { ref } from 'vue'
+import { ref, Ref } from 'vue'
 
-export const useMiniProductAdapter = async (source: string) => {
+export const useMiniProductAdapter = async (source: string): Promise<Ref<MiniProduct[]>> => {
     const ProductList = ref<MiniProduct[]>([]);
     try{
         const res: Awaited<any> = await API.fetchLocalData(source);
