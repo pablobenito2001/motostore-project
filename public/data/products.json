@@ -1,0 +1,128 @@
+[
+    {
+        "id": 0,
+        "name": "Motorola Moto G72",
+        "price": 110.999,
+        "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685767061/motostore/products/moto_g_72/thumbnail_o3alno.png",
+        "type": "smartphone",
+        "family": "motog"
+    },
+    {
+        "id": 1,
+        "name": "Motorola Edge 40 Pro",
+        "price": 369.999,
+        "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685766645/motostore/products/edge_30_pro/thumbnail_dlb7ku.png",
+        "type": "smartphone",
+        "family": "edge",
+        "selects": {
+            "colors": ["negro cuarzo"],
+            "storage": ["256gb"]
+        },
+        "specs": {
+            "general": {
+                "sistema operativo": "Android 13",
+                "dimenciones": "160.47 x 74.4 x 7.89",
+                "peso": "199g",
+                "sensores": "Acelerómetro, Sensor de Proximidad, Brújula (Campo magnético), Giroscopio, Huella Dactilar, Luz ambiente."
+            },
+            "cámara": {
+                "trasera": "Principal: 50 MP (84.1°) F1.8 Gran angular y profundidad: 50 MP (114°) F2.2 Macro: 12 MP (46.3°) F1.6",
+                "frontal": "60MP"
+            },
+            "memoria": {
+                "RAM": "12GB LPDDR5x"
+            },
+            "conectividad": {
+                "Bluetooth": "BT 5.3",
+                "WiFi": "2.4, 5 y 6 GHz",
+                "NFC": "Si"
+            },
+            "bateria": {
+                "Capacidad de Bateria": "4600 mAh"
+            },
+            "otros": {
+                "MyUx": "Controlá tu smartphone con gestos sencillos, personalizá los ajustes de entretenimiento y crea un aspecto único para vos.",
+                "Seguridad": "Tus datos estarán protegidos contra el malware, la suplantación de identidad y otras amenazas gracias a ThinkShield"
+            }
+        },
+        "new": true
+    },
+    {
+        "id": 2,
+        "name": "Motorola Moto G23",
+        "price": 81.999,
+        "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685767868/motostore/products/moto_g23/thumbnail_q2mw2q.png",
+        "type": "smartphone",
+        "family": "motog",
+        "selects": {
+            "colors": ["Azul Cristal", "Blanco"],
+            "storage": ["128gb"]
+        },
+        "new": false
+    },
+    {
+        "id": 3,
+        "name": "Motorola Moto G42",
+        "price": 92.999,
+        "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685769009/motostore/products/moto_g42/thumbnail_nbbmk9.png",
+        "type": "smartphone",
+        "family": "motog",
+        "selects": {
+            "colors": ["Verde Atlántico", "Rosa Metálico"],
+            "storage": ["128gb"]
+        },
+        "new": false
+    },
+    {
+        "id": 4,
+        "name": "Motorola Moto E32",
+        "price": 65.999,
+        "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685769402/motostore/products/moto_e32/thumbnail_a0jkuh.png",
+        "type": "smartphone",
+        "family": "motoe",
+        "selects": {
+            "colors": ["Gris", "Plata"],
+            "storage":  ["64gb"]
+        },
+        "new": false
+    },
+    {
+        "id": 5,
+        "name": "Motorola Edge 30 Fusion SE",
+        "price": 269.999,
+        "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685770198/motostore/products/moto_edge30_fusion_SE/thumbnail_dm97y4.png",
+        "type": "smartphone",
+        "family": "edge",
+        "selects": {
+            "colors": ["Viva Magenta"],
+            "storage": ["256gb"]
+        },
+        "new": false
+    },
+    {
+        "id": 6,
+        "name": "Motorola Moto E13",
+        "price": 48.999,
+        "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685771280/motostore/products/moto_e13/thumbnail_objdnc.png",
+        "type": "smartphone",
+        "family": "motoe",
+        "selects": {
+            "colors": ["Azul Turquesa", "Natural"],
+            "storage": ["64gb"]
+        },
+        "new": false
+    },
+    {
+        "id": 7,
+        "name": "Motorola Edge 30 Neo",
+        "price": 159.999,
+        "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685771572/motostore/products/edge_30_neo/thumbnail_xnz01e.png",
+        "type": "smartphone",
+        "family": "edge",
+        "selects": {
+            "colors": ["Very Peri", "Ice Palace", "Black Onyx"],
+            "storage": ["128gb"]
+        },
+        "new": false
+    }
+]

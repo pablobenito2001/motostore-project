@@ -10,8 +10,8 @@
             </div>
             <div class="Header-new">
                 <h2 class="Header-text Header-newPhone">motorola edge 40 pro</h2>
-                <video class="Header-video" autoplay muted loop>
-                    <source src="/video/edge_40_pro_min.mp4" type="video/mp4" media="(min-width: 800px)">
+                <video class="Header-video" autoplay muted loop poster="../../assets/img/edge_40_pro_presentation.png">
+                    <source src="/video/edge_40_pro_min.mp4" type="video/mp4" media="(max-width: 850px)">
                 </video>
             </div>
         </div>
@@ -32,6 +32,7 @@
         &-text{
             line-height: normal;
             text-transform: lowercase;
+            font-weight: 700;
         }
         &-titleBox{
             display: flex;
@@ -62,6 +63,9 @@
         &-video{
             width: 100%;
             min-height: 50rem;
+            @media screen and (max-width: 850px){
+                min-height: 25rem;
+            }
         }
     }
 </style>

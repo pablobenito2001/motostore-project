@@ -55,6 +55,7 @@
             font-size: 1em;
             cursor: pointer;
             text-transform: uppercase;
+            font-weight: 600;
             transition: color 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
             &:hover{
                 color: var(--blue);

@@ -44,6 +44,7 @@
         }
         &-title{
             line-height: normal;
+            font-weight: 600;
             font-size: 2.2em;
             color: var(--black);
         }

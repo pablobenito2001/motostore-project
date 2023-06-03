@@ -34,8 +34,7 @@ body {
     font-smooth: always;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #001C57;
-    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, var(--black) 28px ), repeating-linear-gradient( #3d3d3d55, #35353591 );
+    background-color: var(--white);
 }
 
 img, picture, video, iframe, figure {
