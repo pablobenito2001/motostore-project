@@ -1,19 +1,26 @@
 <template>
-    <div class="MiniProduct" :class="$attrs.class">
-        <img :src="picture" :alt="`${ name }' pic'`" class="MiniProduct-thumbnail">
+    <div class="MiniProduct" :class="$attrs.class" @click="navegate">
+        <img :src="props.picture" :alt="`${ props.name }' pic'`" class="MiniProduct-thumbnail">
         <div class="MiniProduct-indoBox">
-            <span class="MiniProduct-price">${{ price }},00</span>
-            <p class="MiniProduct-info">{{ name }}</p>
+            <span class="MiniProduct-price">${{ props.price }},00</span>
+            <p class="MiniProduct-info">{{ props.name }}</p>
         </div>
     </div>  
 </template>
 <script lang='ts' setup>
+    import { router } from '../../router/router';
+
     interface Props{
         name: string;
         price: boolean | number;
         picture: string;
+        codeName: string;
     }
-    defineProps<Props>()
+    const props = defineProps<Props>()
+
+    function navegate(){
+        router.push(`/product/${ props.codeName }`)
+    }
 </script>
 <style lang='scss' scoped>
     .MiniProduct{

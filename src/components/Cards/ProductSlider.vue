@@ -16,6 +16,7 @@
                 :name="mini.name"
                 :picture="mini.picture"
                 :price="mini.price"
+                :codeName="mini.codeName"
                 class="ProductSlider-product"
                 />
             </div>
@@ -35,7 +36,7 @@
         interface Props{
         source: string;
         color: string;
-        products: { name: string, price: number | boolean, picture: string, id: number }[];
+        products: { name: string, price: number | boolean, picture: string, id: number, codeName: string }[];
     }
 
     const props = defineProps<Props>();

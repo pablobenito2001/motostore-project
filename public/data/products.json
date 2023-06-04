@@ -2,6 +2,7 @@
     {
         "id": 0,
         "name": "Motorola Moto G72",
+        "codeName": "moto_g72",
         "price": 110.999,
         "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685767061/motostore/products/moto_g_72/thumbnail_o3alno.png",
         "type": "smartphone",
@@ -34,6 +35,7 @@
     {
         "id": 1,
         "name": "Motorola Edge 40 Pro",
+        "codeName": "edge_40_pro",
         "price": 369.999,
         "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685766645/motostore/products/edge_30_pro/thumbnail_dlb7ku.png",
         "type": "smartphone",
@@ -74,6 +76,7 @@
     {
         "id": 2,
         "name": "Motorola Moto G23",
+        "codeName": "moto_g23",
         "price": 81.999,
         "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685767868/motostore/products/moto_g23/thumbnail_q2mw2q.png",
         "type": "smartphone",
@@ -110,6 +113,7 @@
     {
         "id": 3,
         "name": "Motorola Moto G42",
+        "codeName": "moto_g42",
         "price": 92.999,
         "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685769009/motostore/products/moto_g42/thumbnail_nbbmk9.png",
         "type": "smartphone",
@@ -146,6 +150,7 @@
     {
         "id": 4,
         "name": "Motorola Moto E32",
+        "codeName": "moto_e32",
         "price": 65.999,
         "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685769402/motostore/products/moto_e32/thumbnail_a0jkuh.png",
         "type": "smartphone",
@@ -182,6 +187,7 @@
     {
         "id": 5,
         "name": "Motorola Edge 30 Fusion SE",
+        "codeName": "edge_30_fusion_se",
         "price": 269.999,
         "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685770198/motostore/products/moto_edge30_fusion_SE/thumbnail_dm97y4.png",
         "type": "smartphone",
@@ -222,6 +228,7 @@
     {
         "id": 6,
         "name": "Motorola Moto E13",
+        "codeName": "moto_e13",
         "price": 48.999,
         "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685771280/motostore/products/moto_e13/thumbnail_objdnc.png",
         "type": "smartphone",
@@ -258,6 +265,7 @@
     {
         "id": 7,
         "name": "Motorola Edge 30 Neo",
+        "codeName": "edge_32_neo",
         "price": 159.999,
         "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685771572/motostore/products/edge_30_neo/thumbnail_xnz01e.png",
         "type": "smartphone",
@@ -298,6 +306,7 @@
     {
         "id": 8,
         "name": "Motorola Edge 30 Fusion",
+        "codeName": "edge_30_fusion",
         "price": 249.999,
         "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685816779/motostore/products/moto_edge30_fusion/thumbnail_pjrtak.png",
         "type": "smartphone",
@@ -338,6 +347,7 @@
     {
         "id": 9,
         "name": "Motorola Edge 30 Ultra",
+        "codeName": "edge_30_ultra",
         "price": 279.999,
         "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685821236/motostore/products/edge_30_ultra/thumbnail_r5y2sj.png",
         "type":"smartphone",
@@ -378,6 +388,7 @@
     {
         "id": 10,
         "name": "Motorola Moto G32",
+        "codeName": "moto_e32",
         "price": 86.999,
         "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685822375/motostore/products/moto_g32/thumbnail_zgnaif.png",
         "type": "smartphone",
@@ -413,6 +424,7 @@
     {
         "id": 11,
         "name": "Motorola Moto E22",
+        "codeName": "moto_e22",
         "price": 53.999,
         "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685839222/motostore/products/moto_e22/thumbnail_hsgtga.png",
         "family":"motoe",
@@ -449,6 +461,7 @@
     {
         "id": 12,
         "name": "Motorola Moto G13",
+        "codeName": "moto_g13",
         "price": 71.999,
         "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685840058/motostore/products/moto_g13/thumbnail_gams6b.png",
         "family": "motog",
@@ -456,6 +469,29 @@
         "selects": {
             "colors": ["Gris Oxford", "Rosa Palido"],
             "storage": ["64gb"]
+        },
+        "specs": {
+            "general": {
+                "Sistema operativo":"Android 13",
+                "Dimenciones": "162.7x74.66x8.19mm",
+                "Peso": "184g",
+                "Sensores": "Acelerómetro, Brújula (Campo magnético), Sensor de Proximidad, Giroscopio, Huella Dactilar, Luz Ambiente, Desbloqueo Facial"
+            },
+            "cámara": {
+                "Trasera": "Principal: 50 MP (74.26°) F1.8 Angular y profundidad: 2MP (78°) F2.4 Macro: 2MP (80.1°) F2.4",
+                "Frontal": "8MP"
+            },
+            "memoria": {
+                "RAM": "4GB"
+            },
+            "conectividad": {
+                "Bluetooth": "BT 5.1",
+                "WiFi": "802.11 a/b/g/n/ac/k/v/r/u - WIFI5",
+                "NFC": "No"
+            },
+            "bateria": {
+                "Capacidad de Bateria": "5000 mAh"
+            }
         },
         "new": true
     }

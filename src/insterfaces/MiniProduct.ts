@@ -4,4 +4,5 @@ export default interface MiniProduct{
     price: boolean | number;
     picture: string;
     family: string;
+    codeName: string;
 }

@@ -12,7 +12,8 @@ export const useMiniProductAdapter = async (source: string): Promise<Ref<MiniPro
                 name: elem.name,
                 price: elem.price,
                 picture: elem.thumbnail,
-                family: elem.family
+                family: elem.family,
+                codeName: elem.codeName
             })
         })
     }catch(e){
