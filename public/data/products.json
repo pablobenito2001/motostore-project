@@ -9,27 +9,28 @@
         "family": "motog",
         "specs": {
             "general": {
-                "Sistema operativo": "Android 13",
-                "Dimenciones": "160.47 x 74.4 x 7.89",
-                "Peso": "166g",
-                "Sensores": "Acelerómetro, Sensor de Proximidad, Brújula (Campo magnético), Giroscopio, Huella Dactilar, Luz ambiente, Si"
+                "sistema_operativo": "Android 13",
+                "dimenciones": "160.47 x 74.4 x 7.89",
+                "peso": "166g",
+                "sensores": "Acelerómetro, Sensor de Proximidad, Brújula (Campo magnético), Giroscopio, Huella Dactilar, Luz ambiente, Si"
             },
-            "cámara": {
-                "Trasera": "Principal: 108 MP (83.63°) F1.7 Gran angular y profundidad: 8 MP (118°) F2.2 Macro: 2 MP (88.2°) F2.4",
-                "Frontal": "16MP"
+            "camara": {
+                "trasera": "Principal: 108 MP (83.63°) F1.7 Gran angular y profundidad: 8 MP (118°) F2.2 Macro: 2 MP (88.2°) F2.4",
+                "frontal": "16MP"
             },
             "memoria": {
-                "RAM": "6GB"
+                "ram": "6GB"
             },
             "conectividad": {
-                "Bluetooth":"BT 5.1",
-                "WiFi": "802.11 a/b/g/n/ac",
-                "NFC": "Si"
+                "bluetooth":"BT 5.1",
+                "wifi": "802.11 a/b/g/n/ac",
+                "nfc": "Si"
             },
             "bateria": {
-                "Capacidad de Bateria": "5000 mAh"
+                "capacidad_de_bateria": "5000 mAh"
             }
         },
+        "pictures": [],
         "new": false
     },
     {
@@ -46,31 +47,41 @@
         },
         "specs": {
             "general": {
-                "Sistema operativo": "Android 13",
-                "Dimenciones": "160.47 x 74.4 x 7.89",
-                "Peso": "199g",
-                "Sensores": "Acelerómetro, Sensor de Proximidad, Brújula (Campo magnético), Giroscopio, Huella Dactilar, Luz ambiente."
+                "sistema_operativo": "Android 13",
+                "dimenciones": "160.47 x 74.4 x 7.89",
+                "peso": "199g",
+                "sensores": "Acelerómetro, Sensor de Proximidad, Brújula (Campo magnético), Giroscopio, Huella Dactilar, Luz ambiente."
             },
-            "cámara": {
-                "Trasera": "Principal: 50 MP (84.1°) F1.8 Gran angular y profundidad: 50 MP (114°) F2.2 Macro: 12 MP (46.3°) F1.6",
-                "Frontal": "60MP"
+            "camara": {
+                "trasera": "Principal: 50 MP (84.1°) F1.8 Gran angular y profundidad: 50 MP (114°) F2.2 Macro: 12 MP (46.3°) F1.6",
+                "frontal": "60MP"
             },
             "memoria": {
-                "RAM": "12GB LPDDR5x"
+                "ram": "12GB LPDDR5x"
             },
             "conectividad": {
-                "Bluetooth": "BT 5.3",
-                "WiFi": "2.4, 5 y 6 GHz",
-                "NFC": "Si"
+                "bluetooth": "BT 5.3",
+                "wifi": "2.4, 5 y 6 GHz",
+                "nfc": "Si"
             },
             "bateria": {
-                "Capacidad de Bateria": "4600 mAh"
+                "capacidad_de_bateria": "4600 mAh"
             },
             "otros": {
                 "MyUx": "Controlá tu smartphone con gestos sencillos, personalizá los ajustes de entretenimiento y crea un aspecto único para vos.",
                 "Seguridad": "Tus datos estarán protegidos contra el malware, la suplantación de identidad y otras amenazas gracias a ThinkShield"
             }
         },
+        "pictures": [
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685860138/motostore/products/edge_30_pro/image_cakbjr.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685860262/motostore/products/edge_30_pro/image_ksstl9.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685860331/motostore/products/edge_30_pro/image_nfohsy.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685860379/motostore/products/edge_30_pro/image_nagktx.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685860431/motostore/products/edge_30_pro/image_qaluih.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685860490/motostore/products/edge_30_pro/image_k9zxyy.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685860537/motostore/products/edge_30_pro/image_mybdi1.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685860612/motostore/products/edge_30_pro/image_yw9pnw.png"
+        ],
         "new": true
     },
     {
@@ -87,27 +98,28 @@
         },
         "specs": {
             "general": {
-                "Sistema operativo": "Android 13",
-                "Dimenciones": "162.7x74.66x8.19mm",
-                "Peso": "184g",
-                "Sensores": "Acelerómetro, Sensor de Proximidad, Brújula (Campo magnético), Giroscopio, Huella Dactilar, Luz Ambiente,Desbloqueo Facial"
+                "sistema_operativo": "Android 13",
+                "dimenciones": "162.7x74.66x8.19mm",
+                "peso": "184g",
+                "sensores": "Acelerómetro, Sensor de Proximidad, Brújula (Campo magnético), Giroscopio, Huella Dactilar, Luz Ambiente,Desbloqueo Facial"
             },
-            "cámara": {
-                "Trasera": "Principal: 50 MP (74.26°) F1.8 Angular y profundidad: 5MP (125°) F2.2 Macro: 2MP (78°) F2.4",
-                "Frontal": "16MP"
+            "camara": {
+                "trasera": "Principal: 50 MP (74.26°) F1.8 Angular y profundidad: 5MP (125°) F2.2 Macro: 2MP (78°) F2.4",
+                "frontal": "16MP"
             },
             "memoria": {
-                "RAM": "4GB"
+                "ram": "4GB"
             },
             "conectividad": {
-                "Bluetooth": "BT 5.1",
-                "WiFi": "802.11 a/b/g/n/ac/k/v/r/u - WIFI5",
-                "NFC": "No"
+                "bluetooth": "BT 5.1",
+                "wifi": "802.11 a/b/g/n/ac/k/v/r/u - WIFI5",
+                "nfc": "No"
             },
             "bateria": {
-                "Capacidad de Bateria": "5000 mAh"
+                "capacidad_de_bateria": "5000 mAh"
             }
         },
+        "pictures": [],
         "new": true
     },
     {
@@ -124,27 +136,28 @@
         },
         "specs": {
             "general": {
-                "Sistema operativo": "Android 12",
-                "Dimenciones": "160.4 x 73.47 x 7.99",
-                "Peso": "174.4g",
-                "Sensores": "Acelerómetro, Sensor de Proximidad, Brújula (Campo magnético), Giroscopio, Huella Dactilar, Desbloqueo Facial"
+                "sistema_operativo": "Android 12",
+                "dimenciones": "160.4 x 73.47 x 7.99",
+                "peso": "174.4g",
+                "sensores": "Acelerómetro, Sensor de Proximidad, Brújula (Campo magnético), Giroscopio, Huella Dactilar, Desbloqueo Facial"
             },
-            "cámara": {
-                "Trasera": "50MP + 8MP (Gran Angular/Profundidad) + Macro 2MP",
-                "Frontal": "16MP"
+            "camara": {
+                "trasera": "50MP + 8MP (Gran Angular/Profundidad) + Macro 2MP",
+                "frontal": "16MP"
             },
             "memoria": {
-                "RAM": "4GB"
+                "ram": "4GB"
             },
             "conectividad": {
-                "Bluetooth": "BT 5.0",
-                "WiFi": "802.11 a/b/g/n/ac/k/v/r/u - WIFI5",
-                "NFC": "Si"
+                "bluetooth": "BT 5.0",
+                "wifi": "802.11 a/b/g/n/ac/k/v/r/u - WIFI5",
+                "nfc": "Si"
             },
             "bateria": {
-                "Capacidad de Bateria": "5000 mAh"
+                "capacidad_de_bateria": "5000 mAh"
             }
         },
+        "pictures": [],
         "new": false
     },
     {
@@ -161,27 +174,28 @@
         },
         "specs": {
             "general": {
-                "Sistema operativo": "Android 13",
-                "Dimenciones": "163.95 x 74.94 x 8.49",
-                "Peso": "184g",
-                "Sensores": "Acelerómetro, Proximidad, Huella dactilar"
+                "sistema_operativo": "Android 13",
+                "dimenciones": "163.95 x 74.94 x 8.49",
+                "peso": "184g",
+                "sensores": "Acelerómetro, Proximidad, Huella dactilar"
             },
-            "cámara": {
-                "Trasera": "16MP + 2MP + 2MP",
-                "Frontal": "8MP"
+            "camara": {
+                "trasera": "16MP + 2MP + 2MP",
+                "frontal": "8MP"
             },
             "memoria": {
-                "RAM": "4GB"
+                "ram": "4GB"
             },
             "conectividad": {
-                "Bluetooth": "BT 5.0",
-                "WiFi": "802.11 b/g/n/k/v/r/u - WIFI4",
-                "NFC": "No"
+                "bluetooth": "BT 5.0",
+                "wifi": "802.11 b/g/n/k/v/r/u - WIFI4",
+                "nfc": "No"
             },
             "bateria": {
-                "Capacidad de Bateria": "5000 mAh"
+                "capacidad_de_bateria": "5000 mAh"
             }
         },
+        "pictures": [],
         "new": false
     },
     {
@@ -198,31 +212,32 @@
         },
         "specs": {
             "general": {
-                "Sistema operativo":"Android 12",
-                "Dimenciones": "158.48 x 71.99 x 7.45 mm",
-                "Peso": "175g",
-                "Sensores": "Acelerómetro, Sensor de proximidad, Brújula (Campo magnético), Giroscopio, Huella Dactilar, Luz ambiente, Desbloqueo Facial"
+                "sistema_operativo":"Android 12",
+                "dimenciones": "158.48 x 71.99 x 7.45 mm",
+                "peso": "175g",
+                "sensores": "Acelerómetro, Sensor de proximidad, Brújula (Campo magnético), Giroscopio, Huella Dactilar, Luz ambiente, Desbloqueo Facial"
             },
-            "cámara": {
-                "Trasera": "Principal: 50MP (84.01°) F1.88 Gran angular y profundidad: 13MP (120°) F2.2 Macro: 2MP (86.1°) F2.4 (QP-NV-OIS)",
-                "Frontal": "32MP"
+            "camara": {
+                "trasera": "Principal: 50MP (84.01°) F1.88 Gran angular y profundidad: 13MP (120°) F2.2 Macro: 2MP (86.1°) F2.4 (QP-NV-OIS)",
+                "frontal": "32MP"
             },
             "memoria": {
-                "RAM": "12GB puede expandir RAM hasta 15 GB"
+                "ram": "12GB puede expandir ram hasta 15 GB"
             },
             "conectividad": {
-                "Bluetooth": "BT 5.2",
-                "WiFi": "802.11 a/b/g/n/ac/ax /k/v/r/u - WiFi 6E",
-                "NFC": "Si"
+                "bluetooth": "BT 5.2",
+                "wifi": "802.11 a/b/g/n/ac/ax /k/v/r/u - WiFi 6E",
+                "nfc": "Si"
 
             },
             "bateria": {
-                "Capacidad de Bateria": "4400 mAh"
+                "capacidad_de_bateria": "4400 mAh"
             },
             "otros": {
                 "Cargador": "turbopower 68w incluido"
             }
         },
+        "pictures": [],
         "new": false
     },
     {
@@ -239,33 +254,34 @@
         },
         "specs": {
             "general": {
-                "Sistema operativo": "Android Go",
-                "Dimenciones": "164.19x74.95x8.47 mm",
-                "Peso": "179.5g",
-                "Sensores": "Acelerómetro, Sensor de Proximidad, Desbloqueo Facial"
+                "sistema_operativo": "Android Go",
+                "dimenciones": "164.19x74.95x8.47 mm",
+                "peso": "179.5g",
+                "sensores": "Acelerómetro, Sensor de Proximidad, Desbloqueo Facial"
             },
-            "cámara": {
-                "Trasera": "13MP (81.1°) F2.2",
-                "Frontal": "5MP"
+            "camara": {
+                "trasera": "13MP (81.1°) F2.2",
+                "frontal": "5MP"
             },
             "memoria": {
-                "RAM": "2GB"
+                "ram": "2GB"
             },
             "conectividad": {
-                "Bluetooth": "BT 5.0",
-                "WiFi": "802.11 a/b/g/n/ac",
-                "NFC": "No"
+                "bluetooth": "BT 5.0",
+                "wifi": "802.11 a/b/g/n/ac",
+                "nfc": "No"
             },
             "bateria": {
-                "Capacidad de Bateria": "5000 mAh"
+                "capacidad_de_bateria": "5000 mAh"
             }
         },
+        "pictures": [],
         "new": true
     },
     {
         "id": 7,
         "name": "Motorola Edge 30 Neo",
-        "codeName": "edge_32_neo",
+        "codeName": "edge_30_neo",
         "price": 159.999,
         "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685771572/motostore/products/edge_30_neo/thumbnail_xnz01e.png",
         "type": "smartphone",
@@ -276,31 +292,32 @@
         },
         "specs": {
             "general": {
-                "Sistema operativo": "Android 12",
-                "Dimenciones": "152.94 x 71.23 x 7.75 mm",
-                "Peso": "155g",
-                "Sensores": "Acelerómetro,Sensor de Proximidad,Brújula (Campo magnético),Giroscopio,Huella Dactilar,Luz ambiente,Desbloqueo Facial"
+                "sistema_operativo": "Android 12",
+                "dimenciones": "152.94 x 71.23 x 7.75 mm",
+                "peso": "155g",
+                "sensores": "Acelerómetro,Sensor de Proximidad,Brújula (Campo magnético),Giroscopio,Huella Dactilar,Luz ambiente,Desbloqueo Facial"
             },
-            "cámara": {
-                "Trasera": "Principal: 64MP (81°) F1.8 Gran angular y macro: 13MP (120°) F2.2 (QP-NV-OIS)",
-                "Frontal": "32MP"
+            "camara": {
+                "trasera": "Principal: 64MP (81°) F1.8 Gran angular y macro: 13MP (120°) F2.2 (QP-NV-OIS)",
+                "frontal": "32MP"
             },
             "memoria": {
-                "RAM": "8GB"
+                "ram": "8GB"
             },
             "conectividad": {
-                "Bluetooth": "BT 5.1",
-                "WiFi": "802.11 a/b/g/n/ac",
-                "NFC": "Si"
+                "bluetooth": "BT 5.1",
+                "wifi": "802.11 a/b/g/n/ac",
+                "nfc": "Si"
             },
             "bateria": {
-                "Capacidad de Bateria": "4020 mAh"
+                "capacidad_de_bateria": "4020 mAh"
             },
             "otros": {
                 "Cargador": "CARGADOR TURBOPOWER 68W INCLUIDO",
                 "Carga Inalambrica": "5W"
             }
         },
+        "pictures": [],
         "new": false
     },
     {
@@ -317,31 +334,32 @@
         },
         "specs": {
             "general": {
-                "Sistema operativo":"Android 12",
-                "Dimenciones": "158.48 x 71.99 x 7.45 mm",
-                "Peso": "175g",
-                "Sensores": "Acelerómetro, Sensor de proximidad, Brújula (Campo magnético), Giroscopio, Huella Dactilar, Luz ambiente, Desbloqueo Facial"
+                "sistema_operativo":"Android 12",
+                "dimenciones": "158.48 x 71.99 x 7.45 mm",
+                "peso": "175g",
+                "sensores": "Acelerómetro, Sensor de proximidad, Brújula (Campo magnético), Giroscopio, Huella Dactilar, Luz ambiente, Desbloqueo Facial"
             },
-            "cámara": {
-                "Trasera": "Principal: 50MP (84.01°) F1.88 Gran angular y profundidad: 13MP (120°) F2.2 Macro: 2MP (86.1°) F2.4 (QP-NV-OIS)",
-                "Frontal": "32MP"
+            "camara": {
+                "trasera": "Principal: 50MP (84.01°) F1.88 Gran angular y profundidad: 13MP (120°) F2.2 Macro: 2MP (86.1°) F2.4 (QP-NV-OIS)",
+                "frontal": "32MP"
             },
             "memoria": {
-                "RAM": "12GB puede expandir RAM hasta 15 GB"
+                "ram": "12GB puede expandir ram hasta 15 GB"
             },
             "conectividad": {
-                "Bluetooth": "BT 5.2",
-                "WiFi": "802.11 a/b/g/n/ac/ax /k/v/r/u - WiFi 6E",
-                "NFC": "Si"
+                "bluetooth": "BT 5.2",
+                "wifi": "802.11 a/b/g/n/ac/ax /k/v/r/u - WiFi 6E",
+                "nfc": "Si"
 
             },
             "bateria": {
-                "Capacidad de Bateria": "4400 mAh"
+                "capacidad_de_bateria": "4400 mAh"
             },
             "otros": {
                 "Cargador": "turbopower 68w incluido"
             }
         },
+        "pictures": [],
         "new": false
     },
     {
@@ -358,37 +376,39 @@
         },
         "specs": {
             "general": {
-                "Sistema operativo": "Android 12",
-                "Dimenciones": "Profundidad: 8.39 mm Largo: 161.76 mm Ancho: 73.5 mm",
-                "Peso": "190g",
-                "Sensores": "Acelerómetro, Sensor de Proximidad, Brújula (Campo magnético), Giroscopio, Huella dáctilar en pantalla, Desbloqueo Facial."
+                "sistema_operativo": "Android 12",
+                "dimenciones": "Profundidad: 8.39 mm Largo: 161.76 mm Ancho: 73.5 mm",
+                "peso": "190g",
+                "sensores": "Acelerómetro, Sensor de Proximidad, Brújula (Campo magnético), Giroscopio, Huella dáctilar en pantalla, Desbloqueo Facial."
             },
-            "cámara": {
-                "Trasera": "Sensor principal: 200 MP + 50MP + 12MP",
-                "Frontal": "60MP"
+            "camara": {
+                "trasera": "Sensor principal: 200 MP + 50MP + 12MP",
+                "frontal": "60MP"
             },
             "memoria": {
-                "RAM":"12GB LPDDR5x"
+                "ram":"12GB LPDDR5x"
             },
             "conectividad": {
-                "Bluetooth": "BT 5.2",
-                "WiFi": "802.11 a/b/g/n/ac/ax /k/v/r/u | 2,4 GHz, 5 GHz e 6 GHz | Wi-Fi 6E",
-                "NFC": "Si"
+                "bluetooth": "BT 5.2",
+                "wifi": "802.11 a/b/g/n/ac/ax /k/v/r/u | 2,4 GHz, 5 GHz e 6 GHz | Wi-Fi 6E",
+                "nfc": "Si"
             },
             "bateria": {
-                "Capacidad de Bateria": "4610 mAh"
+                "capacidad_de_bateria": "4610 mAh"
             },
             "otros": {
                 "Cargador":"CARGADOR TURBOPOWER 120W INCLUIDO",
                 "Carga Inalambrica": "50W",
                 "Carga Reversible": "10W"
             }
-        }
+        },
+        "pictures": [],
+        "new": true
     },
     {
         "id": 10,
         "name": "Motorola Moto G32",
-        "codeName": "moto_e32",
+        "codeName": "moto_g32",
         "price": 86.999,
         "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685822375/motostore/products/moto_g32/thumbnail_zgnaif.png",
         "type": "smartphone",
@@ -399,27 +419,29 @@
         },
         "specs": {
             "general": {
-                "Sistema operativo": "Android 12",
-                "Dimenciones": "161.78 x 73.84 x 8.49",
-                "Peso": "180g",
-                "Sensores": "Acelerómetro,Sensor de Proximidad,Brújula (Campo magnético),Giroscopio,Huella Dactilar,Otros,Desbloqueo Facial"
+                "sistema_operativo": "Android 12",
+                "dimenciones": "161.78 x 73.84 x 8.49",
+                "peso": "180g",
+                "sensores": "Acelerómetro,Sensor de Proximidad,Brújula (Campo magnético),Giroscopio,Huella Dactilar,Otros,Desbloqueo Facial"
             },
-            "cámara":{
-                "Trasera": "50MP (74.26°)F1.8 Gran Angular: 8MP (118°) F2.2 Macro: 2MP (88°) F2.2",
-                "Frontal": "16MP"
+            "camara":{
+                "trasera": "50MP (74.26°)F1.8 Gran Angular: 8MP (118°) F2.2 Macro: 2MP (88°) F2.2",
+                "frontal": "16MP"
             },
             "memoria": {
-                "RAM": "4GB"
+                "ram": "4GB"
             },
             "conectividad": {
-                "Bluetooth": "BT 5.2",
-                "WiFi": "802.11 a/b/g/n/ac/k/v/r/u - WIFI5",
-                "NFC": "No"
+                "bluetooth": "BT 5.2",
+                "wifi": "802.11 a/b/g/n/ac/k/v/r/u - WIFI5",
+                "nfc": "No"
             },
             "bateria": {
-                "Capacidad de Bateria": "5000 mAh"
+                "capacidad_de_bateria": "5000 mAh"
             }
-        }
+        },
+        "pictures": [],
+        "new": false
     },
     {
         "id": 11,
@@ -435,27 +457,28 @@
         },
         "specs": {
             "general": {
-                "Sistema operativo": "Android 12",
-                "Dimenciones": "63.56 x 74.65 x 7.99",
-                "Peso": "174g",
-                "Sensores": "Acelerómetro, Sensor de Proximidad, Brújula (Campo magnético), Huella Dactilar, Desbloqueo Facial"
+                "sistema_operativo": "Android 12",
+                "dimenciones": "63.56 x 74.65 x 7.99",
+                "peso": "174g",
+                "sensores": "Acelerómetro, Sensor de Proximidad, Brújula (Campo magnético), Huella Dactilar, Desbloqueo Facial"
             },
-            "cámara": {
-                "Trasera": "Principal: 16 MP (80°) F2.2 Macro: 2MP (80.1°) F2.4",
-                "Frontal": "5MP"
+            "camara": {
+                "trasera": "Principal: 16 MP (80°) F2.2 Macro: 2MP (80.1°) F2.4",
+                "frontal": "5MP"
             },
             "memoria": {
-                "RAM": "3GB"
+                "ram": "3GB"
             },
             "conectividad": {
-                "Bluetooth": "BT 5.0",
-                "WiFi": "802.11 a/b/g/n/ac",
-                "NFC": "No"
+                "bluetooth": "BT 5.0",
+                "wifi": "802.11 a/b/g/n/ac",
+                "nfc": "No"
             },
             "bateria": {
-                "Capacidad de Bateria": "4020 mAh"
+                "capacidad_de_bateria": "4020 mAh"
             }
         },
+        "pictures": [],
         "new": false
     },
     {
@@ -472,27 +495,28 @@
         },
         "specs": {
             "general": {
-                "Sistema operativo":"Android 13",
-                "Dimenciones": "162.7x74.66x8.19mm",
-                "Peso": "184g",
-                "Sensores": "Acelerómetro, Brújula (Campo magnético), Sensor de Proximidad, Giroscopio, Huella Dactilar, Luz Ambiente, Desbloqueo Facial"
+                "sistema_operativo":"Android 13",
+                "dimenciones": "162.7x74.66x8.19mm",
+                "peso": "184g",
+                "sensores": "Acelerómetro, Brújula (Campo magnético), Sensor de Proximidad, Giroscopio, Huella Dactilar, Luz Ambiente, Desbloqueo Facial"
             },
-            "cámara": {
-                "Trasera": "Principal: 50 MP (74.26°) F1.8 Angular y profundidad: 2MP (78°) F2.4 Macro: 2MP (80.1°) F2.4",
-                "Frontal": "8MP"
+            "camara": {
+                "trasera": "Principal: 50 MP (74.26°) F1.8 Angular y profundidad: 2MP (78°) F2.4 Macro: 2MP (80.1°) F2.4",
+                "frontal": "8MP"
             },
             "memoria": {
-                "RAM": "4GB"
+                "ram": "4GB"
             },
             "conectividad": {
-                "Bluetooth": "BT 5.1",
-                "WiFi": "802.11 a/b/g/n/ac/k/v/r/u - WIFI5",
-                "NFC": "No"
+                "bluetooth": "BT 5.1",
+                "wifi": "802.11 a/b/g/n/ac/k/v/r/u - WIFI5",
+                "nfc": "No"
             },
             "bateria": {
-                "Capacidad de Bateria": "5000 mAh"
+                "capacidad_de_bateria": "5000 mAh"
             }
         },
+        "pictures": [],
         "new": true
     }
 ]

@@ -27,7 +27,7 @@
         padding: .625rem;
         background-color: var(--white);
         cursor: pointer;
-        border: solid 1px var(--blue);
+        border: solid 1px var(--black);
         &:hover .MiniProduct-thumbnail{
             transform: translateY(-10px);
         }
