@@ -1,7 +1,6 @@
 <template>
     <main class="Home">
         <HeaderModule />
-        <CardModule />
         <Suspense>
             <NewPhonesModule />
             <template #fallback>
@@ -9,6 +8,7 @@
             </template>
         </Suspense>
         <ProductsHomeModule />
+        <CardModule />
     </main>
 </template>
 <script lang='ts' setup>

@@ -17,7 +17,7 @@
         &-text{
             line-height: normal;
             font-weight: 700;
-            font-size: clamp(4.375em, 9vw, 9em);
+            font-size: clamp(3.7em, 9vw, 9em);
             color: var(--black);
             text-transform: lowercase;
         }

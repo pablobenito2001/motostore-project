@@ -409,5 +409,54 @@
                 "Capacidad de Bateria": "5000 mAh"
             }
         }
+    },
+    {
+        "id": 11,
+        "name": "Motorola Moto E22",
+        "price": 53.999,
+        "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685839222/motostore/products/moto_e22/thumbnail_hsgtga.png",
+        "family":"motoe",
+        "type":"smartphone",
+        "selects": {
+            "colors": ["Azul", "Negro"],
+            "storage": ["32GB"]
+        },
+        "specs": {
+            "general": {
+                "Sistema operativo": "Android 12",
+                "Dimenciones": "63.56 x 74.65 x 7.99",
+                "Peso": "174g",
+                "Sensores": "Acelerómetro, Sensor de Proximidad, Brújula (Campo magnético), Huella Dactilar, Desbloqueo Facial"
+            },
+            "cámara": {
+                "Trasera": "Principal: 16 MP (80°) F2.2 Macro: 2MP (80.1°) F2.4",
+                "Frontal": "5MP"
+            },
+            "memoria": {
+                "RAM": "3GB"
+            },
+            "conectividad": {
+                "Bluetooth": "BT 5.0",
+                "WiFi": "802.11 a/b/g/n/ac",
+                "NFC": "No"
+            },
+            "bateria": {
+                "Capacidad de Bateria": "4020 mAh"
+            }
+        },
+        "new": false
+    },
+    {
+        "id": 12,
+        "name": "Motorola Moto G13",
+        "price": 71.999,
+        "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685840058/motostore/products/moto_g13/thumbnail_gams6b.png",
+        "family": "motog",
+        "type": "smartphone",
+        "selects": {
+            "colors": ["Gris Oxford", "Rosa Palido"],
+            "storage": ["64gb"]
+        },
+        "new": true
     }
 ]

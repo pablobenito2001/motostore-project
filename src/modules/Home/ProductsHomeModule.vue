@@ -1,6 +1,6 @@
 <template>
     <TitleGlobal>productos</TitleGlobal>
-    <ColumnLayout>
+    <ColumnLayout class="Products">
         <Suspense>
             <GFamily />
             <template #fallback>
@@ -30,5 +30,9 @@
     import LoaderSections from '../../components/Loader/LoaderSections.vue';
 </script>
 <style lang='scss' scoped>
-
+    .Products{
+        @media screen and (max-width: 850px){
+            padding: 2.1875rem 0;
+        }
+    }
 </style>
