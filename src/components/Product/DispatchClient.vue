@@ -8,7 +8,7 @@
         </div>
         <div class="Dispatch-section">
             <span class="Dispatch-label">Selecciona un Color: </span>
-            <div class="Dispatch-section">
+            <div class="Dispatch-grid">
                 <RadioImput 
                 v-for="(color, index) in props.selects.colors"
                 :key="index"
@@ -19,14 +19,16 @@
                 />
             </div>
             <span class="Dispatch-label">Capacidad: </span>
-            <RadioImput 
-            v-for="(storage, index) in props.selects.storage"
-            :key="index"
-            :id="`input${ storage }`"
-            label="Capacidad: "
-            name-input="storageSelect"
-            :value="storage"
-            />
+            <div class="Dispatch-grid">
+                <RadioImput 
+                v-for="(storage, index) in props.selects.storage"
+                :key="index"
+                :id="`input${ storage }`"
+                label="Capacidad: "
+                name-input="storageSelect"
+                :value="storage"
+                />
+            </div>
         </div>
         <div class="Dispatch-section">
             <span class="Dispatch-label">Potencia tu experiencia con nuestros accesorios:</span>
@@ -38,7 +40,7 @@
             :id="`id${ product.name.split(/\s*;\s*/) }`"
             :price="product.price"
             name-input="selectProduct"
-            @add_price="(e: number) => extraPrice += e"
+            @emit-product="updateExtrasList"
             />  
         </div>
         <div class="Dispatch-section">
@@ -51,11 +53,12 @@
     </div>
 </template>
 <script lang='ts' setup>
-    import { ref, computed } from 'vue';
+    import { ref, computed, watch } from 'vue';
 
     import GeneralButton from '../Buttons/GeneralButton.vue';
     import RadioImput from '../Input/RadioImput.vue';
     import CheckboxProduct from './CheckboxProduct.vue';
+    import FinishProduct from '../../insterfaces/FinishProduct';
 
     interface Props{
         name: string;
@@ -66,19 +69,37 @@
     }
 
     const props = defineProps<Props>();
+    const totalPrice = ref<number>(props.price);
+    const extraProductsList = ref<{ name: string, price: number }[]>([]);
 
-    // price calculated
-    const extraPrice = ref<number>(props.price);
-
+    // humanized price
     const parseHumanPrice = computed<string>(() => {
-        const priceArray: number[] = Array.from(String(extraPrice.value), Number).reverse();
+        const priceArray: number[] = Array.from(String(totalPrice.value), Number).reverse();
         const humanizedPrice: string[] = [];
         priceArray.forEach((elem: number, index: number) => {        
-            if(index % 3 === 0 && index !== 0) humanizedPrice.push('.', String(elem))
-            else humanizedPrice.push(String(elem))
+            index % 3 === 0 && index !== 0 
+            ? humanizedPrice.push('.', elem.toString())
+            : humanizedPrice.push(elem.toString());
         });
         return humanizedPrice.reverse().join('');
-    })
+    });
+
+    // update total price
+    function updatePrice(newPrice: number): void{
+        totalPrice.value += newPrice;
+    }
+
+    // extra products update
+    function updateExtrasList(e: { name: string, price: number }): void{
+        const hasExtraProduct: boolean = extraProductsList.value.some((elem: { name: string, price: number }) => elem.name === e.name)
+        updatePrice(e.price);
+        if(hasExtraProduct){
+            const index: number = extraProductsList.value.findIndex((elem: { name: string, price: number }) => elem.name === e.name) as number;
+            extraProductsList.value.splice(index, 1);
+        }else{
+            extraProductsList.value.push(e)
+        }
+    };
 </script>
 <style lang='scss' scoped>
     .Dispatch{
@@ -98,6 +119,13 @@
             @media screen and (max-width: 850px) {
                 margin: 0 0 .625rem 0;
             }
+        }
+        &-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr));
+            grid-auto-rows: auto;
+            gap: .3125rem;
+            margin: 0 0 .625rem 0;
         }
         &-button{
             width: 100%;

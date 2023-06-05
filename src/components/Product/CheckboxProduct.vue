@@ -29,14 +29,15 @@
 
     const props = defineProps<Props>();
     const emit = defineEmits<{
-    (e: 'add_price', value: number): void
+    (e: 'emitProduct', value: { name: string, price: number }): void
     }>()
 
 
     function emitPrice(e: Event){
         const value = e.target as HTMLInputElement
-        if(value.checked) emit('add_price', Number(value.value));
-        else emit('add_price', 0 - Number(value.value));
+        value.checked 
+        ? emit('emitProduct', { name: props.name, price: Number(value.value)})
+        : emit('emitProduct', { name: props.name, price: 0 - Number(value.value)});
     }
 </script>
 <style lang='scss' scoped>

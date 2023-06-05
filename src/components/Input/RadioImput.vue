@@ -19,8 +19,6 @@
 <style lang='scss' scoped>
     .RadioInput{
         display: inline-block;
-        max-width: 12.5rem;
-        width: 100%;
         &-label{
             display: block;
             margin: 0 0 5px 0;

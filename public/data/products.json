@@ -7,6 +7,10 @@
         "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685767061/motostore/products/moto_g_72/thumbnail_o3alno.png",
         "type": "smartphone",
         "family": "motog",
+        "selects": {
+            "colors": ["Azul Niagara", "Blanco Brillante"],
+            "storage": ["128gb"]
+        },
         "specs": {
             "general": {
                 "sistema_operativo": "Android 13",
@@ -30,7 +34,39 @@
                 "capacidad_de_bateria": "5000 mAh"
             }
         },
-        "pictures": [],
+        "pictures": [
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685951421/motostore/products/moto_g_72/pictures/image_zvnn0k.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685951478/motostore/products/moto_g_72/pictures/image_qoilqj.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685951550/motostore/products/moto_g_72/pictures/image_dom3qz.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685951599/motostore/products/moto_g_72/pictures/image_vsrt0j.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685951716/motostore/products/moto_g_72/pictures/image_l1lunb.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685951760/motostore/products/moto_g_72/pictures/image_kyaheq.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685951811/motostore/products/moto_g_72/pictures/image_yoylpy.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685951863/motostore/products/moto_g_72/pictures/image_phk7kw.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685951904/motostore/products/moto_g_72/pictures/image_n7e6je.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685951946/motostore/products/moto_g_72/pictures/image_lqedyj.png"
+        ],
+        "extra": [
+            {
+                "name": "Motorola Earbuds 10S",
+                "price": 4499,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685952214/motostore/extra_products_thumbnail/image_b1uwf3.png",
+                "codeName": "earbuds_10s"
+            },
+            {
+                "name": "Motorola Earbuds 3-S",
+                "price": 4999,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685952290/motostore/extra_products_thumbnail/image_djsnk4.png",
+                "codeName": "earbuds_3-s"
+            },
+            {
+                "name": "Auriculares Inalambricos Moto XT220",
+                "price": 24999,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685910741/motostore/extra_products_thumbnail/image_kptbnn.png",
+                "codeName": "moto_xt220"
+            }
+        ],
+        "resume": "Sistema de cámaras con sensor principal de 108 MP.",
         "new": false
     },
     {
@@ -139,6 +175,27 @@
                 "capacidad_de_bateria": "5000 mAh"
             }
         },
+        "extra": [
+            {
+                "name": "Motorola Earbuds 3-S",
+                "price": 4999,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685952290/motostore/extra_products_thumbnail/image_djsnk4.png",
+                "codeName": "earbuds_3-s"
+            },
+            {
+                "name": "Auriculares Inalambricos Moto XT220",
+                "price": 24999,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685910741/motostore/extra_products_thumbnail/image_kptbnn.png",
+                "codeName": "moto_xt220"
+            },
+            {
+                "name": "Moto Buds 085",
+                "price": 23499,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685910517/motostore/extra_products_thumbnail/image_f4ghhd.png",
+                "codeName": "buds_085"
+            }
+        ],
+        "resume": "Sistema de cámaras de 50 MP + Ultra Gran Angular + Macro.",
         "pictures": [],
         "new": true
     },
@@ -177,6 +234,27 @@
                 "capacidad_de_bateria": "5000 mAh"
             }
         },
+        "extra": [
+            {
+                "name": "Auriculares Inalambricos Moto XT220",
+                "price": 24999,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685910741/motostore/extra_products_thumbnail/image_kptbnn.png",
+                "codeName": "moto_xt220"
+            },
+            {
+                "name": "Funda Protectora Premiun - G42",
+                "price": 5999,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685953262/motostore/extra_products_thumbnail/image_hwxano.png",
+                "codeName": "funda_g42_premiun"
+            },
+            {
+                "name": "Funda Protectora - G42",
+                "price": 5099,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685953262/motostore/extra_products_thumbnail/image_hwxano.png",
+                "codeName": "funda_g42_premiun"
+            }
+        ],
+        "resume": "Colores de calidad cinematográfica.",
         "pictures": [],
         "new": false
     },
@@ -215,6 +293,27 @@
                 "capacidad_de_bateria": "5000 mAh"
             }
         },
+        "extra": [
+            {
+                "name": "Auriculares Moto XT200",
+                "price": 17399,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685953480/motostore/extra_products_thumbnail/image_rixpdn.png",
+                "codeName": "moto_xt220"
+            },
+            {
+                "name": "Auriculares Inalambricos Moto XT220",
+                "price": 24999,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685910741/motostore/extra_products_thumbnail/image_kptbnn.png",
+                "codeName": "moto_xt220"
+            },
+            {
+                "name": "Moto Buds 085",
+                "price": 23499,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685910517/motostore/extra_products_thumbnail/image_f4ghhd.png",
+                "codeName": "buds_085"
+            }
+        ],
+        "resume": "Con un diseño elegante, pero resistente.",
         "pictures": [],
         "new": false
     },
@@ -258,6 +357,27 @@
             }
         },
         "pictures": [],
+        "extra": [
+            {
+                "name": "Funda Protectora - Edge 30 Fusion",
+                "price": 8499,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685953710/motostore/extra_products_thumbnail/image_agbgt0.png",
+                "codeName" : "funda_edge_30_fusion"
+            },
+            {
+                "name": "Moto Buds 085",
+                "price": 23499,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685910517/motostore/extra_products_thumbnail/image_f4ghhd.png",
+                "codeName": "buds_085"
+            },
+            {
+                "name": "Auriculares Inalambricos Moto XT220",
+                "price": 24999,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685910741/motostore/extra_products_thumbnail/image_kptbnn.png",
+                "codeName": "moto_xt220"
+            }
+        ],
+        "resume": "Lucí el color 2023 de Pantone 'Viva Magenta' y su terminación en cuero vegano.",
         "new": false
     },
     {
@@ -296,6 +416,27 @@
             }
         },
         "pictures": [],
+        "extra": [
+            {
+                "name": "Motorola Earbuds 10S",
+                "price": 4499,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685952214/motostore/extra_products_thumbnail/image_b1uwf3.png",
+                "codeName": "earbuds_10s"
+            },
+            {
+                "name": "Motorola Earbuds 3-S",
+                "price": 4999,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685952290/motostore/extra_products_thumbnail/image_djsnk4.png",
+                "codeName": "earbuds_3-s"
+            },
+            {
+                "name": "Moto Buds 085",
+                "price": 23499,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685910517/motostore/extra_products_thumbnail/image_f4ghhd.png",
+                "codeName": "buds_085"
+            }
+        ],
+        "resume": "Sistema de cámaras de 50 MP y tecnología Quad Pixel.",
         "new": true
     },
     {
@@ -337,6 +478,27 @@
                 "Carga Inalambrica": "5W"
             }
         },
+        "extra": [
+            {
+                "name": "Auriculares Moto XT200",
+                "price": 17399,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685953480/motostore/extra_products_thumbnail/image_rixpdn.png",
+                "codeName": "moto_xt220"
+            },
+            {
+                "name": "Auriculares Inalambricos Moto XT220",
+                "price": 24999,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685910741/motostore/extra_products_thumbnail/image_kptbnn.png",
+                "codeName": "moto_xt220"
+            },
+            {
+                "name": "Moto Buds 085",
+                "price": 23499,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685910517/motostore/extra_products_thumbnail/image_f4ghhd.png",
+                "codeName": "buds_085"
+            }
+        ],
+        "resume": "Compacto. Colorido. Todo lo que imaginás",
         "pictures": [],
         "new": false
     },
@@ -379,6 +541,27 @@
                 "Cargador": "turbopower 68w incluido"
             }
         },
+        "extra": [
+            {
+                "name": "Funda Protectora - Edge 30 Fusion",
+                "price": 8499,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685953710/motostore/extra_products_thumbnail/image_agbgt0.png",
+                "codeName" : "funda_edge_30_fusion"
+            },
+            {
+                "name": "Moto Buds 085",
+                "price": 23499,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685910517/motostore/extra_products_thumbnail/image_f4ghhd.png",
+                "codeName": "buds_085"
+            },
+            {
+                "name": "Auriculares Inalambricos Moto XT220",
+                "price": 24999,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685910741/motostore/extra_products_thumbnail/image_kptbnn.png",
+                "codeName": "moto_xt220"
+            }
+        ],
+        "resume": "Increíblemente delgado. Perfectamente balanceado.",
         "pictures": [],
         "new": false
     },
@@ -386,7 +569,7 @@
         "id": 9,
         "name": "Motorola Edge 30 Ultra",
         "codeName": "edge_30_ultra",
-        "price": 279999,
+        "price": 334999,
         "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685821236/motostore/products/edge_30_ultra/thumbnail_r5y2sj.png",
         "type":"smartphone",
         "family": "edge",
@@ -422,7 +605,29 @@
                 "Carga Reversible": "10W"
             }
         },
-        "pictures": [],
+        "pictures": [
+            ""
+        ],
+        "extra": [
+            {
+                "name": "Funda Motorola Edge 30 Ultra",
+                "price": 8499,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685952597/motostore/extra_products_thumbnail/image_wt2una.png",
+                "codeName": "funda_edge_30_ultra"
+            },
+            {
+                "name": "Moto Buds 250",
+                "price": 29499,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685909460/motostore/extra_products_thumbnail/image_mmszjw.png",
+                "codeName": "buds_250"
+            },
+            {
+                "name": "Motorola Earbuds 3-S",
+                "price": 4999,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685952290/motostore/extra_products_thumbnail/image_djsnk4.png",
+                "codeName": "earbuds_3-s"
+            }
+        ],
         "new": true
     },
     {
@@ -460,6 +665,27 @@
                 "capacidad_de_bateria": "5000 mAh"
             }
         },
+        "extra": [
+            {
+                "name": "Auriculares Moto XT120",
+                "price": 17999,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685954475/motostore/extra_products_thumbnail/image_nacqxs.png",
+                "codeName": "moto_xt120"
+            },
+            {
+                "name": "Moto Buds 250",
+                "price": 29499,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685909460/motostore/extra_products_thumbnail/image_mmszjw.png",
+                "codeName": "buds_250"
+            },
+            {
+                "name": "Auriculares Inalambricos Moto XT220",
+                "price": 24999,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685910741/motostore/extra_products_thumbnail/image_kptbnn.png",
+                "codeName": "moto_xt220"
+            }
+        ],
+        "resume": "Sonido multidimensional Dolby Atmos y altavoces estéreo.",
         "pictures": [],
         "new": false
     },
@@ -498,6 +724,27 @@
                 "capacidad_de_bateria": "4020 mAh"
             }
         },
+        "extra": [
+            {
+                "name": "Auriculares Moto XT120",
+                "price": 17999,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685954475/motostore/extra_products_thumbnail/image_nacqxs.png",
+                "codeName": "moto_xt120"
+            },
+            {
+                "name": "Motorola Earbuds 3-S",
+                "price": 4999,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685952290/motostore/extra_products_thumbnail/image_djsnk4.png",
+                "codeName": "earbuds_3-s"
+            },
+            {
+                "name": "Moto Buds 085",
+                "price": 23499,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685910517/motostore/extra_products_thumbnail/image_f4ghhd.png",
+                "codeName": "buds_085"
+            }
+        ],
+        "resume": "Da vida a tu contenido de entretenimiento con la pantalla fluida de 90 Hz.",
         "pictures": [],
         "new": false
     },
@@ -536,6 +783,27 @@
                 "capacidad_de_bateria": "5000 mAh"
             }
         },
+        "extra": [
+            {
+                "name": "Auriculares Moto XT120",
+                "price": 17999,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685954475/motostore/extra_products_thumbnail/image_nacqxs.png",
+                "codeName": "moto_xt120"
+            },
+            {
+                "name": "Motorola Earbuds 3-S",
+                "price": 4999,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685952290/motostore/extra_products_thumbnail/image_djsnk4.png",
+                "codeName": "earbuds_3-s"
+            },
+            {
+                "name": "Moto Buds 085",
+                "price": 23499,
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685910517/motostore/extra_products_thumbnail/image_f4ghhd.png",
+                "codeName": "buds_085"
+            }
+        ],
+        "resume": "Sistema de cámaras de 50 MP y tecnología Quad Pixel.",
         "pictures": [],
         "new": true
     }
