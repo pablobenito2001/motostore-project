@@ -1,5 +1,5 @@
 <template>
-    <button class="Button"><slot /></button>
+    <button class="Button" :class="$attrs.class"><slot /></button>
 </template>
 <script lang='ts' setup>
 

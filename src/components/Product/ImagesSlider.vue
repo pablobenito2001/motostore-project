@@ -16,6 +16,7 @@
                 :src="img" 
                 alt="Product's image"
                 class="ImageSlider-prevImage"
+                :class="[ index === 0 ? 'ImageSlider--selected' : '']"
                 @click.self="move">
             </div>
         </div>
@@ -33,12 +34,19 @@
     const imageSize = ref<number>(0);
 
     function move(e: MouseEvent): void{
-        const elem = prevElement.value!.childNodes as NodeList;
-        elem.forEach((elem, index) => {
-            if(e.target === elem){
-                position.value = (imageSize.value * (index - 1))
-            };
-        })
+        const nodeList = prevElement.value!.childNodes;
+        nodeList.forEach((elem: Node, index: number) => {
+            if(e.target === elem) position.value = (imageSize.value * (index - 1));
+        });
+        changeSelectedNode(nodeList, e.target as HTMLElement);
+    }
+
+    function changeSelectedNode(nodeList: NodeList, elementeSelected: HTMLElement){
+        nodeList.forEach((elem: Node) => {
+            const htmlElement = elem as HTMLElement;
+            if(htmlElement.classList) htmlElement.classList.remove('ImageSlider--selected'); 
+        });
+        elementeSelected.classList.add('ImageSlider--selected');
     }
 
     function updateImageSize(): void{
@@ -56,6 +64,7 @@
     .ImageSlider{
         background-image: url('/img/bg_product.png');
         background-color: var(--black);
+        background-size: cover;
         background-repeat: no-repeat;
         position: relative;
         overflow: hidden;
@@ -72,7 +81,7 @@
         &-preview{
             overflow: hidden;
             background-color: var(--white);
-            @media screen and (max-width: 850px){
+            @media screen and (max-width: 400px){
                 display: none;
             }
         }
@@ -84,6 +93,9 @@
             &:hover{
                 background-color: var(--blue);
             }
+        }
+        &--selected{
+            background-color: var(--blue);
         }
     }
 </style>

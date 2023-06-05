@@ -1,5 +1,5 @@
 <template>
-    <div class="GridLayout">
+    <div class="GridLayout" :class="$attrs.class">
         <slot />
     </div>
 </template>

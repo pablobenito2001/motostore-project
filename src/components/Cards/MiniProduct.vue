@@ -19,7 +19,7 @@
     const props = defineProps<Props>()
 
     function navegate(){
-        router.push(`/product/${ props.codeName }`)
+        router.push(`/products/${ props.codeName }`)
     }
 </script>
 <style lang='scss' scoped>

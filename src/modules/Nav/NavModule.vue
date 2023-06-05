@@ -8,7 +8,7 @@
                     <span class="Nav-shops">0</span>
                 </div>
                 <ul class="Nav-linkBox">
-                    <li class="Nav-link">Inicio</li>
+                    <li class="Nav-link"><RouterLink to="/">Inicio</RouterLink></li>
                     <li class="Nav-link">Productos</li>
                     <li class="Nav-link">Exclusive</li>
                     <li class="Nav-link">Stores</li>

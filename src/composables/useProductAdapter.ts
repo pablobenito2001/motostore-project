@@ -14,6 +14,7 @@ export const useProductAdapter = async (source: string, phoneName: string): Prom
             selects: phone.selects,
             specs: phone.specs,
             pictures: phone.pictures,
+            extras: phone.extra,
             new: phone.new
         };      
     }catch (e){
