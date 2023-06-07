@@ -6,7 +6,7 @@
                 <img :src="props.pic" alt="product's picture" class="CheckboxProduct-image">
                 <div class="CheckboxProduct-infoBox">
                     <span class="CheckboxProduct-info">{{ props.name }}</span>
-                    <span class="CheckboxProduct-info">${{ props.price }},00</span>
+                    <span class="CheckboxProduct-info">${{ humanizedFunction }},00</span>
                 </div>
             </div>
             <label class="CheckboxProduct-button" :for="props.id" v-show="!labelOption" @click="() => labelOption = true">+Agregar</label>
@@ -16,35 +16,34 @@
 </template>
 <script lang='ts' setup>
     import { ref } from 'vue';
-
-    const labelOption = ref<boolean>(false);
-
+    import { useHumanizedPrice } from '../../composables/useHumanizedPrice';
+    
     interface Props {
         pic: string;
         name: string;
         price: number;
         nameInput: string;
         id: string;
+        codeName: string;
     }
 
+    const labelOption = ref<boolean>(false);
     const props = defineProps<Props>();
     const emit = defineEmits<{
-    (e: 'emitProduct', value: { name: string, price: number }): void
+    (e: 'emitProduct', value: { name: string, price: number, thumbnail: string, codeName: string }): void
     }>()
-
+    const { humanizedFunction } = useHumanizedPrice(props.price);
 
     function emitPrice(e: Event){
         const value = e.target as HTMLInputElement
         value.checked 
-        ? emit('emitProduct', { name: props.name, price: Number(value.value)})
-        : emit('emitProduct', { name: props.name, price: 0 - Number(value.value)});
+        ? emit('emitProduct', { name: props.name, price: Number(value.value), thumbnail: props.pic, codeName: props.codeName})
+        : emit('emitProduct', { name: props.name, price: 0 - Number(value.value), thumbnail: props.pic, codeName: props.codeName});
     }
 </script>
 <style lang='scss' scoped>
     .CheckboxProduct{
         margin: .3125rem 0;
-        border: solid 2px var(--black);
-        border-radius: .3125rem;
         width: 100%;
         &-box{
             display: flex;
@@ -69,8 +68,11 @@
             display: flex;
             align-items: flex-end;
             justify-content: space-between;
+            border: solid 2px var(--black);
+            border-radius: .3125rem;
             gap: .625rem;
             padding: .625rem;
+            transition: background-color .6s cubic-bezier(0.075, 0.82, 0.165, 1), border .6s cubic-bezier(0.075, 0.82, 0.165, 1);
         }
         &-button{
             color: var(--blue);
@@ -82,6 +84,7 @@
             width: 0;
             height: 0;
             &:checked + .CheckboxProduct-container{
+                border: solid 2px var(--blue);
                 background-color: var(--alpha-blue);
             }
         }

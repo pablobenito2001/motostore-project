@@ -3,7 +3,7 @@
         <div class="Buy">
             <ImagesSlider :pictures="data.pictures" class="Buy-stiky"/>
         </div>
-        <DispatchClient :name="data.name" :price="data.price" :selects="data.selects" :extras="data.extras" description="Procesador Snapdragon® 8 Gen 2, el más avanzado hasta el momento."/>
+        <DispatchClient :name="data.name" :price="data.price" :selects="data.selects" :extras="data.extras" :resume="data.resume" :thumbnail="data.thumbnail" :code-name="data.codeName"/>
     </GridLayout>
 </template>
 <script lang='ts' setup>

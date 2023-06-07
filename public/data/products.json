@@ -9,7 +9,7 @@
         "family": "motog",
         "selects": {
             "colors": ["Azul Niagara", "Blanco Brillante"],
-            "storage": ["128gb"]
+            "storage": ["128GB"]
         },
         "specs": {
             "general": {
@@ -79,7 +79,7 @@
         "family": "edge",
         "selects": {
             "colors": ["negro cuarzo"],
-            "storage": ["256gb"]
+            "storage": ["256GB"]
         },
         "specs": {
             "general": {
@@ -138,6 +138,7 @@
                 "codeName": "moto_xt220"
             }
         ],
+        "resume": "Procesador Snapdragon® 8 Gen 2, el más avanzado hasta el momento.",
         "new": true
     },
     {
@@ -150,7 +151,7 @@
         "family": "motog",
         "selects": {
             "colors": ["Azul Cristal", "Blanco"],
-            "storage": ["128gb"]
+            "storage": ["128GB"]
         },
         "specs": {
             "general": {
@@ -175,6 +176,17 @@
                 "capacidad_de_bateria": "5000 mAh"
             }
         },
+        "pictures": [
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685984703/motostore/products/moto_g23/pictures/164188-800-auto_yjlkqb.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685984752/motostore/products/moto_g23/pictures/164188-800-auto_p9yo4m.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685984852/motostore/products/moto_g23/pictures/164190-800-auto_iesl0q.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685984896/motostore/products/moto_g23/pictures/164190-800-auto_ofifqr.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685984946/motostore/products/moto_g23/pictures/164190-800-auto_fnwact.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685984982/motostore/products/moto_g23/pictures/164190-800-auto_rw5epi.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685985021/motostore/products/moto_g23/pictures/164190-800-auto_y3i2xt.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685985500/motostore/products/moto_g23/pictures/164190-800-auto_k4ppcb.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685985558/motostore/products/moto_g23/pictures/164190-800-auto_ytqqu0.png"
+        ],
         "extra": [
             {
                 "name": "Motorola Earbuds 3-S",
@@ -196,7 +208,6 @@
             }
         ],
         "resume": "Sistema de cámaras de 50 MP + Ultra Gran Angular + Macro.",
-        "pictures": [],
         "new": true
     },
     {
@@ -209,7 +220,7 @@
         "family": "motog",
         "selects": {
             "colors": ["Verde Atlántico", "Rosa Metálico"],
-            "storage": ["128gb"]
+            "storage": ["128GB"]
         },
         "specs": {
             "general": {
@@ -234,6 +245,16 @@
                 "capacidad_de_bateria": "5000 mAh"
             }
         },
+        "pictures": [
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685985859/motostore/products/moto_g42/pictures/164190-800-auto_ve3e9s.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685985936/motostore/products/moto_g42/pictures/164190-800-auto_uhgm0f.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685985981/motostore/products/moto_g42/pictures/164190-800-auto_os96og.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685986049/motostore/products/moto_g42/pictures/164190-800-auto_jlwmfw.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685986078/motostore/products/moto_g42/pictures/164190-800-auto_q2g665.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685986105/motostore/products/moto_g42/pictures/164190-800-auto_ytoem0.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685986142/motostore/products/moto_g42/pictures/164190-800-auto_xsbsxx.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685986168/motostore/products/moto_g42/pictures/164190-800-auto_eprj3t.png"
+        ],
         "extra": [
             {
                 "name": "Auriculares Inalambricos Moto XT220",
@@ -255,7 +276,6 @@
             }
         ],
         "resume": "Colores de calidad cinematográfica.",
-        "pictures": [],
         "new": false
     },
     {
@@ -268,7 +288,7 @@
         "family": "motoe",
         "selects": {
             "colors": ["Gris", "Plata"],
-            "storage":  ["64gb"]
+            "storage":  ["64GB"]
         },
         "specs": {
             "general": {
@@ -293,6 +313,18 @@
                 "capacidad_de_bateria": "5000 mAh"
             }
         },
+        "pictures": [
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685986415/motostore/products/moto_g32/pictures/164190-800-auto_wqmpvh.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685986448/motostore/products/moto_g32/pictures/164190-800-auto_mexq3z.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685986490/motostore/products/moto_g32/pictures/164190-800-auto_pp4adb.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685986521/motostore/products/moto_g32/pictures/164190-800-auto_rgtzop.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685986566/motostore/products/moto_g32/pictures/164190-800-auto_jw5pqv.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685986588/motostore/products/moto_g32/pictures/164190-800-auto_nssvvh.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685986801/motostore/products/moto_e32/pictures/164190-800-auto_fpv5ws.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685986841/motostore/products/moto_e32/pictures/164190-800-auto_uaozvl.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685986878/motostore/products/moto_e32/pictures/164190-800-auto_vmwnyw.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685986914/motostore/products/moto_e32/pictures/164190-800-auto_iwmhts.png"
+        ],
         "extra": [
             {
                 "name": "Auriculares Moto XT200",
@@ -314,7 +346,6 @@
             }
         ],
         "resume": "Con un diseño elegante, pero resistente.",
-        "pictures": [],
         "new": false
     },
     {
@@ -327,7 +358,7 @@
         "family": "edge",
         "selects": {
             "colors": ["Viva Magenta"],
-            "storage": ["256gb"]
+            "storage": ["256GB"]
         },
         "specs": {
             "general": {
@@ -356,12 +387,23 @@
                 "Cargador": "turbopower 68w incluido"
             }
         },
-        "pictures": [],
+        "pictures": [
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685987087/motostore/products/moto_edge30_fusion_SE/pictures/164190-800-auto_mvxc7z.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685987140/motostore/products/moto_edge30_fusion_SE/pictures/164190-800-auto_x1ytry.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685987190/motostore/products/moto_edge30_fusion_SE/pictures/164190-800-auto_kcr8ue.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685987273/motostore/products/moto_edge30_fusion_SE/pictures/164190-800-auto_pm2m6b.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685987310/motostore/products/moto_edge30_fusion_SE/pictures/164190-800-auto_pfehwf.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685987342/motostore/products/moto_edge30_fusion_SE/pictures/164190-800-auto_xhgrgu.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685987395/motostore/products/moto_edge30_fusion_SE/pictures/164190-800-auto_i7ft7i.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685987428/motostore/products/moto_edge30_fusion_SE/pictures/164190-800-auto_pl4wxh.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685987462/motostore/products/moto_edge30_fusion_SE/pictures/164190-800-auto_fufbkp.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1685987498/motostore/products/moto_edge30_fusion_SE/pictures/164190-800-auto_x6tddc.png"
+        ],
         "extra": [
             {
                 "name": "Funda Protectora - Edge 30 Fusion",
                 "price": 8499,
-                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685953710/motostore/extra_products_thumbnail/image_agbgt0.png",
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685953710/motostore/extra_products_thumbnail/image_aGBgt0.png",
                 "codeName" : "funda_edge_30_fusion"
             },
             {
@@ -390,7 +432,7 @@
         "family": "motoe",
         "selects": {
             "colors": ["Azul Turquesa", "Natural"],
-            "storage": ["64gb"]
+            "storage": ["64GB"]
         },
         "specs": {
             "general": {
@@ -415,7 +457,9 @@
                 "capacidad_de_bateria": "5000 mAh"
             }
         },
-        "pictures": [],
+        "pictures": [
+            
+        ],
         "extra": [
             {
                 "name": "Motorola Earbuds 10S",
@@ -449,7 +493,7 @@
         "family": "edge",
         "selects": {
             "colors": ["Very Peri", "Ice Palace", "Black Onyx"],
-            "storage": ["128gb"]
+            "storage": ["128GB"]
         },
         "specs": {
             "general": {
@@ -512,7 +556,7 @@
         "family": "edge",
         "selects": {
             "colors": ["Blanco Opalo", "Negro Quarzo", "Azul Lázuli"],
-            "storage": ["256gb"]
+            "storage": ["256GB"]
         },
         "specs": {
             "general": {
@@ -545,7 +589,7 @@
             {
                 "name": "Funda Protectora - Edge 30 Fusion",
                 "price": 8499,
-                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685953710/motostore/extra_products_thumbnail/image_agbgt0.png",
+                "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685953710/motostore/extra_products_thumbnail/image_aGBgt0.png",
                 "codeName" : "funda_edge_30_fusion"
             },
             {
@@ -575,7 +619,7 @@
         "family": "edge",
         "selects": {
             "colors": ["Blanco Starlight", "Negro Interestelar"],
-            "storage": ["256gb"]
+            "storage": ["256GB"]
         },
         "specs": {
             "general": {
@@ -640,7 +684,7 @@
         "family": "motog",
         "selects": {
             "colors": ["Gris Mineral", "Plata Satinado", "Rosa Pastel"],
-            "storage": ["128gb"]
+            "storage": ["128GB"]
         },
         "specs": {
             "general": {
@@ -758,7 +802,7 @@
         "type": "smartphone",
         "selects": {
             "colors": ["Gris Oxford", "Rosa Palido"],
-            "storage": ["64gb"]
+            "storage": ["64GB"]
         },
         "specs": {
             "general": {

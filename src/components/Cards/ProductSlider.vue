@@ -48,12 +48,10 @@
     const maxScroll = computed<number>(() => (cardSize.value * props.products.length) - cardSize.value);
 
     function scrollRight(e: MouseEvent): void{
-        if(move.value === maxScroll.value) return;
-        else move.value += cardSize.value;
+        if(move.value !== maxScroll.value) move.value += cardSize.value;
     }
     function scrollLeft(e: MouseEvent): void{
-        if(move.value === 0) return;
-        else move.value -= cardSize.value;   
+        if(move.value !== 0) move.value -= cardSize.value;
     }
 
     function updateCardSize(): void{

@@ -8,4 +8,7 @@ export default interface Product{
     pictures: string[];
     extras: { name: string, codeName: string, price: number, source: string }[];
     new: boolean;
+    resume: string;
+    thumbnail: string;
+    codeName: string;
 }

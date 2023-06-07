@@ -1,4 +1,4 @@
-import { ref, Ref, computed } from 'vue';
+import { ref, Ref } from 'vue';
 import Product from '../insterfaces/Product';
 import API from '../services/API';
 
@@ -15,7 +15,10 @@ export const useProductAdapter = async (source: string, phoneName: string): Prom
             specs: phone.specs,
             pictures: phone.pictures,
             extras: phone.extra,
-            new: phone.new
+            new: phone.new,
+            resume: phone.resume,
+            thumbnail: phone.thumbnail,
+            codeName: phone.codeName
         };      
     }catch (e){
         console.log(e);

@@ -4,8 +4,10 @@
             <span class="Nav-branch">motostore</span>
             <div class="Nav-navigator">
                 <div class="Nav-cartBox">
-                    <img :src="shop" alt="cart icon" class="Nav-cart">
-                    <span class="Nav-shops">0</span>
+                    <router-link to="/cart">
+                        <img :src="shop" alt="cart icon" class="Nav-cart">
+                        <span class="Nav-shops">{{ shopLength }}</span>
+                    </router-link>
                 </div>
                 <ul class="Nav-linkBox">
                     <li class="Nav-link"><RouterLink to="/">Inicio</RouterLink></li>
@@ -18,7 +20,10 @@
     </nav>
 </template>
 <script lang='ts' setup>
-    import shop from '../../assets/svg/shop.svg'
+    import { useShopCart } from '../../store/useShopcCart';
+    import shop from '../../assets/svg/shop.svg';
+
+    const { shopLength } = useShopCart();
 </script>
 <style lang='scss' scoped>
     .Nav{

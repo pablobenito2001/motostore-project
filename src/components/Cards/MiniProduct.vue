@@ -2,13 +2,14 @@
     <div class="MiniProduct" :class="$attrs.class" @click="navegate">
         <img :src="props.picture" :alt="`${ props.name }' pic'`" class="MiniProduct-thumbnail">
         <div class="MiniProduct-indoBox">
-            <span class="MiniProduct-price">${{ props.price }},00</span>
+            <span class="MiniProduct-price">${{ humanizedFunction }},00</span>
             <p class="MiniProduct-info">{{ props.name }}</p>
         </div>
     </div>  
 </template>
 <script lang='ts' setup>
     import { router } from '../../router/router';
+    import { useHumanizedPrice } from '../../composables/useHumanizedPrice';
 
     interface Props{
         name: string;
@@ -17,6 +18,7 @@
         codeName: string;
     }
     const props = defineProps<Props>()
+    const { humanizedFunction } = useHumanizedPrice(props.price as number);
 
     function navegate(){
         router.push(`/products/${ props.codeName }`)

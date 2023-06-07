@@ -4,7 +4,7 @@
             <h1 class="Dispatch-name">{{ props.name }}</h1>
         </div>
         <div class="Dispatch-section">
-            <p class="Dispatch-description">{{ props.description }}</p>
+            <p class="Dispatch-description">{{ props.resume }}</p>
         </div>
         <div class="Dispatch-section">
             <span class="Dispatch-label">Selecciona un Color: </span>
@@ -16,6 +16,8 @@
                 label="Selecciona un Color: "
                 name-input="colorSelect"
                 :value="color"
+                v-model:selected="colorSelect"
+                :class="{ 'Dispatch-select--empty': isEmpty} "
                 />
             </div>
             <span class="Dispatch-label">Capacidad: </span>
@@ -27,6 +29,8 @@
                 label="Capacidad: "
                 name-input="storageSelect"
                 :value="storage"
+                v-model:selected="storageSelect"
+                :class="{ 'Dispatch-select--empty': isEmpty} "
                 />
             </div>
         </div>
@@ -39,6 +43,7 @@
             :pic="product.source"
             :id="`id${ product.name.split(/\s*;\s*/) }`"
             :price="product.price"
+            :code-name="product.codeName"
             name-input="selectProduct"
             @emit-product="updateExtrasList"
             />  
@@ -46,60 +51,97 @@
         <div class="Dispatch-section">
             <div class="Dispatch-priceBox">
                 <span class="Dispatch-text">Un solo pago de:</span>
-                <span class="Dispatch-price">${{ parseHumanPrice }},00</span>
+                <span class="Dispatch-price">${{ humanizedFunction }},00</span>
             </div>
         </div>      
-        <GeneralButton class="Dispatch-button">Agregar al Carrito</GeneralButton>
+        <GeneralButton 
+        class="Dispatch-button" 
+        :class="[ colorSelect && storageSelect ? '' : 'Dispatch-button--disabled']"
+        @click="updateShopCart">Agregar al Carrito</GeneralButton>
     </div>
 </template>
 <script lang='ts' setup>
-    import { ref, computed, watch } from 'vue';
+    import { ref } from 'vue';
+    import { useShopCart } from '../../store/useShopcCart';
+    import { useHumanizedPrice } from '../../composables/useHumanizedPrice';
 
     import GeneralButton from '../Buttons/GeneralButton.vue';
     import RadioImput from '../Input/RadioImput.vue';
     import CheckboxProduct from './CheckboxProduct.vue';
-    import FinishProduct from '../../insterfaces/FinishProduct';
+    import FinalProduct from '../../insterfaces/FinalProduct';
+    import { generateRandomID } from '../../utils/generateRandonID';
 
     interface Props{
         name: string;
-        description: string;
+        resume: string;
         selects: { colors: string[], storage: string[] };
         price: number;
         extras: { name: string, codeName: string, price: number, source: string }[];
+        thumbnail: string;
+        codeName: string;
     }
 
     const props = defineProps<Props>();
     const totalPrice = ref<number>(props.price);
-    const extraProductsList = ref<{ name: string, price: number }[]>([]);
-
-    // humanized price
-    const parseHumanPrice = computed<string>(() => {
-        const priceArray: number[] = Array.from(String(totalPrice.value), Number).reverse();
-        const humanizedPrice: string[] = [];
-        priceArray.forEach((elem: number, index: number) => {        
-            index % 3 === 0 && index !== 0 
-            ? humanizedPrice.push('.', elem.toString())
-            : humanizedPrice.push(elem.toString());
-        });
-        return humanizedPrice.reverse().join('');
-    });
+    const extraProductsList = ref<{ name: string, price: number, thumbnail: string, codeName: string }[]>([]);
+    const colorSelect = ref<string>('');
+    const storageSelect = ref<string>('');
+    const isEmpty = ref<boolean>(false);
+    const { addProduct } = useShopCart();
+    const { humanizedFunction } = useHumanizedPrice(totalPrice);
 
     // update total price
     function updatePrice(newPrice: number): void{
         totalPrice.value += newPrice;
+    };
+
+    // update extra products
+    function updateExtrasList(e: { name: string, price: number, thumbnail: string, codeName: string }): void{
+        updatePrice(e.price);
+
+        const hasExtraProduct: boolean = extraProductsList.value.some((elem: { name: string }) => elem.name === e.name);
+        const indexExtraProduct: number = extraProductsList.value.findIndex((elem: { name: string }) => elem.name === e.name);
+    
+        hasExtraProduct 
+        ? extraProductsList.value.splice(indexExtraProduct, 1)
+        : extraProductsList.value.push({ name: e.name, price: e.price, thumbnail: e.thumbnail, codeName: e.codeName });
+    };
+
+    // create finishProduct object.
+    function createFinalProduct(): FinalProduct[] {
+        const finalProduct: FinalProduct = {
+            id: generateRandomID(10),
+            productName: props.name,
+            finalPrice: props.price,
+            thumbnail: props.thumbnail,
+            codeName: props.codeName,
+            amount: 1
+        };
+        const extraProducts: FinalProduct[] = extraProductsList.value.map((elem: { name: string, price: number, thumbnail: string, codeName: string }) => {
+            return {
+                id: generateRandomID(10),
+                finalPrice: elem.price,
+                productName: elem.name,
+                codeName: elem.codeName,
+                thumbnail: elem.thumbnail,
+                amount: 1
+            }
+        })
+        return [finalProduct, ...extraProducts];
     }
 
-    // extra products update
-    function updateExtrasList(e: { name: string, price: number }): void{
-        const hasExtraProduct: boolean = extraProductsList.value.some((elem: { name: string, price: number }) => elem.name === e.name)
-        updatePrice(e.price);
-        if(hasExtraProduct){
-            const index: number = extraProductsList.value.findIndex((elem: { name: string, price: number }) => elem.name === e.name) as number;
-            extraProductsList.value.splice(index, 1);
+    // update shop cart in global storage(pinia)
+    function updateShopCart(): void{
+        if(colorSelect.value || storageSelect.value){
+            const product: FinalProduct[] = createFinalProduct();
+            addProduct(product);
         }else{
-            extraProductsList.value.push(e)
+            isEmpty.value = true;
+            setTimeout(() => {
+                isEmpty.value = false
+            }, 3000)
         }
-    };
+    }
 </script>
 <style lang='scss' scoped>
     .Dispatch{
@@ -131,6 +173,10 @@
             width: 100%;
             font-weight: 500;
             font-family: var(--principal-font);
+            &--disabled{
+                pointer-events: none;
+                filter: brightness(45%);
+            }
         }
         &-label{
             font-family: var(--secundary-font);
@@ -154,6 +200,10 @@
             font-size: clamp(3em, 4vw, 4em);
             line-height: 100%;
             font-weight: 600;
+        }
+        &-select--empty{
+            border: solid 2px #ee3030;
+            border-radius: .3125rem;
         }
     }
 </style>
