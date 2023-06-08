@@ -458,7 +458,16 @@
             }
         },
         "pictures": [
-            
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1686191637/motostore/products/moto_e13/pictures/164190-800-auto_zhpyhi.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1686191971/motostore/products/moto_e13/pictures/164190-800-auto_hxzcac.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1686192032/motostore/products/moto_e13/pictures/164190-800-auto_el6v5f.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1686192071/motostore/products/moto_e13/pictures/164190-800-auto_bxu3oa.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1686192096/motostore/products/moto_e13/pictures/164190-800-auto_z9u55i.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1686192129/motostore/products/moto_e13/pictures/164190-800-auto_p3ep4e.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1686192155/motostore/products/moto_e13/pictures/164190-800-auto_eepios.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1686192181/motostore/products/moto_e13/pictures/164190-800-auto_sb8irb.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1686192231/motostore/products/moto_e13/pictures/164190-800-auto_dn4fj9.png",
+            "https://res.cloudinary.com/dxagsphno/image/upload/v1686192258/motostore/products/moto_e13/pictures/164190-800-auto_j7ixxr.png"
         ],
         "extra": [
             {
@@ -672,6 +681,7 @@
                 "codeName": "earbuds_3-s"
             }
         ],
+        "resume": "200 MP: la resolución más alta",
         "new": true
     },
     {

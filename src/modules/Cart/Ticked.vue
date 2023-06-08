@@ -13,7 +13,7 @@
         </ul>
         <div>
             <span class="Ticked-subtitle">Precio Total:</span>
-            <span class="Ticked-price">{{ humanizedFunction }},00</span>
+            <span class="Ticked-price">${{ humanizedFunction }},00</span>
         </div>
         <GeneralButton class="Ticked-button">PAGAR</GeneralButton>
     </div>
@@ -26,6 +26,7 @@
     import { useHumanizedPrice } from '../../composables/useHumanizedPrice';
 
     const { shop, finalPrice } = storeToRefs(useShopCart());
+
     const { humanizedFunction } = useHumanizedPrice(finalPrice);
 </script>
 <style lang='scss' scoped>
@@ -37,7 +38,7 @@
         border-radius: 5px;
         padding: 25px 10px;       
         &-title{
-            font-size: clamp(1.3em, 2vw,2em);
+            font-size: clamp(2em, 2vw, 2em);
             font-weight: 600;
             line-height: 100%;
         }

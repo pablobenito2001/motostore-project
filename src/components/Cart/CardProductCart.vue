@@ -63,8 +63,12 @@
         border-radius: .3125rem;
         position: relative;
         @media screen and (max-width: 850px){
-            grid-template-columns: 1fr;
+            grid-template-columns: 1fr 1fr;
             justify-items: flex-start;
+        }
+        @media screen and (max-width: 400px) {
+            grid-template-columns: 1fr;
+            justify-items: unset;
         }
         &-pointer{
             cursor: pointer;

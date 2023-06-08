@@ -7,7 +7,7 @@ export const useShopCart = defineStore('cart', () => {
     const shop: Ref<FinalProduct[]> = ref<FinalProduct[]>([]);
     shop.value = LocalStorage.getLocalStorage<FinalProduct[]>('shop') as FinalProduct[];
 
-    const finalPrice = computed<number>(() => shop.value.reduce((acum: number, elem: FinalProduct) => acum + elem.finalPrice * elem.amount, 1))
+    const finalPrice = computed<number>(() => shop.value.reduce((acum: number, elem: FinalProduct) => acum + elem.finalPrice * elem.amount, 0))
     const shopLength = computed<number>(() => shop.value.length)
 
     function addProduct(value: FinalProduct[]): void{
