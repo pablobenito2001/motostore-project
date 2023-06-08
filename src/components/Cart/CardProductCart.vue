@@ -2,21 +2,24 @@
     <div class="CardCart">
         <div class="CardCart-element">
             <span class="CardCart-title">Producto</span>
-            <div class="CardCart-content">
+            <div class="CardCart-pointer" @click="goto">
                 <img :src="props.thumbnail" :alt="`${ props.name }'s image'`" class="CardCart-image">
-                <span class="CardCart-text CardCart-pointer" @click="goto">{{ props.name }}</span>
+                <span class="CardCart-text CardCart-text--name">{{ props.name }}</span>
             </div>
         </div>
         <div class="CardCart-element">
             <span class="CardCart-title">Cantidad</span>
             <div class="CardCart-amount">
-                <button class="CardCart-elementButton">-</button>
+                <button class="CardCart-elementButton" @click="incrementAmount(props.id ,-1)">-</button>
                 <span class="CardCart-visualizerAmount">{{ props.amount }}</span>
-                <button class="CardCart-elementButton CardCart-elementButton--rigth">+</button>
+                <button class="CardCart-elementButton CardCart-elementButton--rigth" @click="incrementAmount(props.id ,1)">+</button>
             </div>
         </div>
         <div class="CardCart-element">
             <span class="CardCart-title">Envío</span>
+            <div>
+                <span class="CardCart-text">Llega en 4 dias.</span>
+            </div>
         </div>
         <div class="CardCart-element">
             <span class="CardCart-title">Precio</span>
@@ -24,13 +27,16 @@
                 <span class="CardCart-text">${{ humanizedFunction }},00</span>
             </div>
         </div>
+        <span class="CardCart-delete" @click="deleteProduct(props.id)">x</span>
     </div>
 </template>
 <script lang='ts' setup>
     import { useHumanizedPrice } from '../../composables/useHumanizedPrice';
     import { router } from '../../router/router';
+    import { useShopCart } from '../../store/useShopcCart';
 
     interface Props{
+        id: number;
         name: string;
         price: number;
         thumbnail: string;
@@ -40,6 +46,7 @@
 
     const props = defineProps<Props>()
     const { humanizedFunction } = useHumanizedPrice(props.price);
+    const { deleteProduct, incrementAmount } = useShopCart();
 
     function goto(){
         router.push({ path: `products/${ props.codeName }` })
@@ -48,12 +55,17 @@
 <style lang='scss' scoped>
     .CardCart{
         display: grid;
-        grid-template-columns: 18.75rem repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-auto-rows: auto;
-        gap: .3125rem;
+        gap: .625rem;
         padding: .625rem;
         border: solid 2px var(--black);
         border-radius: .3125rem;
+        position: relative;
+        @media screen and (max-width: 850px){
+            grid-template-columns: 1fr;
+            justify-items: flex-start;
+        }
         &-pointer{
             cursor: pointer;
         }
@@ -76,6 +88,9 @@
             display: block;
             margin: 0 0 5px 0;
             font-family: var(--secundary-font);
+            &--name{
+                font-size: .8em;
+            }
         }
         &-amount{
             display: grid;
@@ -105,6 +120,16 @@
             display: grid;
             place-items: center;
             background-color: var(--alpha-blue);
+        }
+        &-delete{
+            color: rgb(230, 53, 53);
+            font-size: 2em;
+            font-weight: 600;
+            cursor: pointer;
+            position: absolute;
+            padding: .3125rem;
+            right: .3125rem;
+            top: .3125rem;
         }
     }
 </style>

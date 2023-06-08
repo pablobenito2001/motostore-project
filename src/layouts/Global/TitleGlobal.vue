@@ -15,11 +15,12 @@
             margin: 0 0 0 .625rem;
         }
         &-text{
-            line-height: normal;
+            line-height: 100%;
             font-weight: 700;
             font-size: clamp(3.7em, 9vw, 9em);
             color: var(--black);
             text-transform: lowercase;
+            padding: .625rem;
         }
     }
 </style>

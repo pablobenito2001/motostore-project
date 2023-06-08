@@ -19,7 +19,7 @@
             filter: brightness(150%);
         }
         @media screen and (max-width: 850px){
-            padding: .3125rem 1.25rem;
+            padding: .625rem 1.25rem;
         }
     }
 </style>

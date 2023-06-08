@@ -25,7 +25,7 @@
         position: relative;
         &-stiky{
             position: sticky;
-            top: 0;
+            top: 5rem;
         }
     }
 </style>

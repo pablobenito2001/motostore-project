@@ -1,7 +1,9 @@
 <template>
-    <nav class="Nav">
+    <nav class="Nav" :class="$attrs.class">
         <div class="Nav-container">
-            <span class="Nav-branch">motostore</span>
+            <div class="Nav-logo">
+                <img :src="logo" alt="">
+            </div>
             <div class="Nav-navigator">
                 <div class="Nav-cartBox">
                     <router-link to="/cart">
@@ -15,15 +17,31 @@
                     <li class="Nav-link">Exclusive</li>
                     <li class="Nav-link">Stores</li>
                 </ul>
+                <div class="Nav-menu" @click="() => open = !open">
+                    <img :src="menu" alt="open menu" v-show="!open">
+                    <img :src="exit" alt="close menu" v-show="open">
+                </div>
             </div>
         </div>
+       <Transition name="slide-fade">
+            <NavMobileModal v-if="open" class="Nav-menu"/>
+       </Transition>
     </nav>
 </template>
 <script lang='ts' setup>
-    import { useShopCart } from '../../store/useShopcCart';
-    import shop from '../../assets/svg/shop.svg';
+    import NavMobileModal from '../../modules/Nav/NavMobileModal.vue';
 
-    const { shopLength } = useShopCart();
+    import { ref } from 'vue';
+    import { useShopCart } from '../../store/useShopcCart';
+    import { storeToRefs } from 'pinia';
+    import logo from '../../assets/img/logo_moto.png';
+    import shop from '../../assets/svg/shop.svg';
+    import menu from '../../assets/svg/menu_open.svg';
+    import exit from '../../assets/svg/menu_close.svg';
+
+    const { shopLength } = storeToRefs(useShopCart());
+
+    const open = ref<boolean>(false);
 </script>
 <style lang='scss' scoped>
     .Nav{
@@ -41,6 +59,9 @@
             justify-content: space-between;
             align-items: center;
         }
+        &-logo{
+            max-width: 2.5rem;
+        }
         &-branch{
             font-weight: 600;
             font-size: clamp(.7em, 1.875vw, 1.875em);
@@ -48,6 +69,7 @@
         }
         &-navigator{
             display: flex;
+            align-items: center;
             gap: 1.25rem;
         }
         &-linkBox{
@@ -55,6 +77,9 @@
             gap: 1.25rem;
             justify-content: center;
             align-items: center;
+            @media screen and (max-width: 850px){
+                display: none;
+            }
         }
         &-link{
             font-size: 1em;
@@ -82,5 +107,25 @@
             top: -0.625rem;
             right: -0.625rem;
         }
+        &-menu{
+            display: none;
+            @media screen and (max-width: 850px) {
+                display: inline-block;
+            }
+        }
+    }
+
+    .slide-fade-enter-active {
+        transition: all 0.3s ease-out;
+    }
+
+    .slide-fade-leave-active {
+        transition: all 0.3s ease-out;
+    }
+
+    .slide-fade-enter-from,
+    .slide-fade-leave-to {
+        transform: translateX(20px);
+        opacity: 0;
     }
 </style>

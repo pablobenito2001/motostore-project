@@ -7,7 +7,7 @@ export const useHumanizedPrice = (rawPrice: Ref<number> | number) => {
 
         isRef(rawPrice) 
         ? priceArray = Array.from(String(rawPrice.value), Number).reverse()
-        : priceArray = Array.from(String(rawPrice), Number).reverse()
+        : priceArray = Array.from(String(rawPrice), Number).reverse();
 
         const humanizedPrice: string[] = [];
         priceArray.forEach((elem: number, index: number) => {        
@@ -15,7 +15,7 @@ export const useHumanizedPrice = (rawPrice: Ref<number> | number) => {
             ? humanizedPrice.push('.', elem.toString())
             : humanizedPrice.push(elem.toString());
         });
-        return humanizedPrice.reverse().join('');    
+        return humanizedPrice.reverse().join('');   
     })
 
     return {

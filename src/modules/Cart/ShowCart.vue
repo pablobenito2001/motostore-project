@@ -8,6 +8,7 @@
         :thumbnail="item.thumbnail"
         :amount="item.amount"
         :code-name="item.codeName"
+        :id="item.id"
         />
     </ColumnLayout>
 </template>
