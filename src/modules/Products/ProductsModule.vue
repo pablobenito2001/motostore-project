@@ -9,10 +9,10 @@
             v-model:max-price="maxPrice"/>
         </template>
         <template #content>
-            <span v-if="error">{{ error.message }}</span>
+            <ErrorShow v-if="error" :message="error.message" :cause="error.cause"/>
             <LoaderSections v-else-if="!loading"/>
             <template v-else>
-                <span v-if="dataFiltered.length === 0">No se encontraron productos.</span>
+                <ErrorShow v-if="dataFiltered.length === 0" message="No se encontraron productos."/>
                 <ProductsCardWrapper v-else :some="dataFiltered"/>
             </template>
         </template>
@@ -24,6 +24,7 @@
     import ProductsFilters from './ProductsFilters.vue';
     import ProductsCardWrapper from './ProductsCardWrapper.vue';
     import LoaderSections from '../../components/Loader/LoaderSections.vue';
+    import ErrorShow from '../../components/Error/ErrorShow.vue';
     import { useGetProducts } from '../../composables/useGetProducts';
     import { ProductAPI, ProductAPICardView } from '../../insterfaces/Product';
 

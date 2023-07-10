@@ -1,6 +1,9 @@
 <template>
     <aside class="Filters">
-        <div class="Filters-filters">
+        <button class="Filters-button" @click="() => open = !open">
+            <svg xmlns="http://www.w3.org/2000/svg" height="45" viewBox="0 -960 960 960" width="45" class="Filters-svg"><path d="M400-240v-60h160v60H400ZM240-450v-60h480v60H240ZM120-660v-60h720v60H120Z"/></svg>
+        </button>
+        <div class="Filters-filters" :class="{ 'Filters-filters--open': open }">
             <SearchInput 
             @emitValue="emitName" 
             id="searchInput" 
@@ -25,6 +28,7 @@
     </aside>
 </template> 
 <script lang='ts' setup>
+    import { ref } from 'vue';
     import SearchInput from '../../components/Commons/SearchInput.vue';
     import SelectInput from '../../components/Commons/SelectInput.vue';
     import PriceInput from '../../components/Commons/PriceInput.vue';
@@ -84,14 +88,37 @@
     function emitMinPrice(value: number){
         emit('update:minPrice', value);
     }
+    // menu filters
+    const open = ref<boolean>(false);
 </script>
 <style lang='scss' scoped>
     .Filters{
         &-filters{
             display: grid;
             gap: 1.25rem;
-            padding: .9375rem .625rem;
             border-radius: .3125rem;
+            overflow: hidden;
+            height: 0;
+            padding: 0;
+            transition: height .6s cubic-bezier(0.075, 0.82, 0.165, 1);
+            @media screen and (min-width: 850px) {
+                height: auto;
+                padding: .9375rem .625rem;
+            }
+        }
+        &-filters--open{
+            height: auto;
+            padding: .9375rem .625rem;
+        }
+        &-button{
+            padding: .3125rem;
+            cursor: pointer;
+            @media screen and (min-width: 850px) {
+                display: none;
+            }
+        }
+        &-svg{
+            fill: var(--black);
         }
     }
 </style>

@@ -50,7 +50,7 @@ export const useGetProduct = (name: string): ResponseAPI<ProductAPIProductView> 
         loading.value = false;
         try{
             const res: Awaited<ProductAPI[]> = await API.fetchData();
-            const product: ProductAPI | undefined = res.find((elem: ProductAPI) => elem.info.codeName === name);
+            const product: ProductAPI | undefined = res.find((elem: ProductAPI) => elem.info.codeName === name.toLocaleLowerCase());
             if(product){
                 Product.value = {
                     name: product.info.name,
@@ -69,7 +69,7 @@ export const useGetProduct = (name: string): ResponseAPI<ProductAPIProductView> 
                 };
                 loading.value = true;
             }else{
-                throw new Error("Product doesn't exist.");
+                throw new Error(`El producto ${name}, no existe.`);
             }
         }catch(e){
             console.error(e);
