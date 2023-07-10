@@ -1,10 +1,12 @@
 <template>
     <TitleGlobal>Nuevo</TitleGlobal>
-    <ColumnLayout>
+    <span v-if="error">{{ error.message }}</span>
+    <LoaderSections v-else-if="!loading"/>
+    <ColumnLayout v-else>
         <NewPhoneCard 
-        v-for="phone in NewPhone"
+        v-for="phone in data"
         :title="phone.title"
-        :caption="phone.caption"
+        :caption="phone.text"
         :pictures="phone.pictures"
         :picture="phone.picture"
         :price="phone.price"
@@ -15,10 +17,10 @@
     import TitleGlobal from '../../layouts/Global/TitleGlobal.vue';
     import ColumnLayout from '../../layouts/Home/ColumnLayout.vue';
     import NewPhoneCard from '../../components/Cards/NewPhoneCard.vue';
+    import LoaderSections from '../../components/Loader/LoaderSections.vue';
+    import { useNewProducts } from '../../composables/useNewProducts';
 
-    import { useNewPhonesAdapter } from '../../composables/useNewPhonesAdapter';
-
-    const NewPhone = await useNewPhonesAdapter('newPhones');
+    const { data, error, loading } = useNewProducts()
 </script>
 <style lang='scss' scoped>
 

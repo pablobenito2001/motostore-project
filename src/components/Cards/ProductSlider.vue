@@ -14,7 +14,7 @@
                 v-for="mini in props.products"
                 :key="mini.id"
                 :name="mini.name"
-                :picture="mini.picture"
+                :thumbnail="mini.thumbnail"
                 :price="mini.price"
                 :codeName="mini.codeName"
                 class="ProductSlider-product"
@@ -36,7 +36,7 @@
         interface Props{
         source: string;
         color: string;
-        products: { name: string, price: number | boolean, picture: string, id: number, codeName: string }[];
+        products: { name: string, price: number, thumbnail: string, id: number, codeName: string }[];
     }
 
     const props = defineProps<Props>();
@@ -134,7 +134,7 @@
 
     :slotted(.ProductSlider-title){
         text-align: center;
-        line-height: 3rem;
+        line-height: 100%;
         font-size: clamp(3.123em, 4vw, 4em);
         font-weight: 400;
         color: var(--white);

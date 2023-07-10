@@ -1,11 +1,11 @@
 <template>
     <ProductsCardLayout>
         <ProductsCard 
-        v-for="(item, index) in products"
+        v-for="(item, index) in some"
         :key="item.id"
         :id="item.id"
         :name="item.name"
-        :picture="item.picture"
+        :picture="item.thumbnail"
         :price="item.price"
         :family="item.family"
         :code-name="item.codeName"
@@ -14,14 +14,15 @@
     </ProductsCardLayout>
 </template>
 <script lang='ts' setup>
-    import ProductsCardLayout from '../../layouts/Products/ProductsCardLayout.vue';
     import ProductsCard from '../../components/Products/ProductsCard.vue';
-    import TitleGlobal from '../../layouts/Global/TitleGlobal.vue';
-    import { useProductsAdapter } from '../../composables/useProductsAdapter';
-    import { Ref } from 'vue';
-    import Products from '../../insterfaces/Products';
+    import ProductsCardLayout from '../../layouts/Products/ProductsCardLayout.vue';
+    import { ProductAPICardView } from '../../insterfaces/Product';
 
-    const products: Ref<Products[]> = await useProductsAdapter('products');
+    interface Props{
+        some: ProductAPICardView[]
+    }
+    
+    const props = defineProps<Props>()
 </script>
 <style lang='scss' scoped>
 

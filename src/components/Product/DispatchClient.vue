@@ -66,7 +66,7 @@
     import { useHumanizedPrice } from '../../composables/useHumanizedPrice';
 
     import GeneralButton from '../Buttons/GeneralButton.vue';
-    import RadioImput from '../Input/RadioImput.vue';
+    import RadioImput from '../Commons/RadioImput.vue';
     import CheckboxProduct from './CheckboxProduct.vue';
     import FinalProduct from '../../insterfaces/FinalProduct';
     import { generateRandomID } from '../../utils/generateRandonID';

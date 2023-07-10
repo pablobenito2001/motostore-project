@@ -8,6 +8,7 @@
     --secundary-font: 'Open Sans', sans-serif;
     /* padding */
     --pad: 35px;
+    --max-width: 125rem;
 }
 @media screen and (max-width: 850px) {
     :root{

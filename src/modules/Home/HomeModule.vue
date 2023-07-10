@@ -1,12 +1,7 @@
 <template>
     <main class="Home">
         <HeaderModule />
-        <Suspense>
-            <NewPhonesModule />
-            <template #fallback>
-                <LoaderSections />
-            </template>
-        </Suspense>
+        <NewPhonesModule />
         <ProductsHomeModule />
         <CardModule />
     </main>
@@ -16,7 +11,6 @@
     import CardModule from './CardModule.vue';
     import NewPhonesModule from './NewPhonesModule.vue';
     import ProductsHomeModule from './ProductsHomeModule.vue';
-    import LoaderSections from '../../components/Loader/LoaderSections.vue';
 </script>
 <style lang='scss' scoped>
     .Home{

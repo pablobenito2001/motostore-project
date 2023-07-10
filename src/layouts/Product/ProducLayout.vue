@@ -1,6 +1,8 @@
 <template>
     <div class="ProductLayout">
-        <slot />
+        <div class="ProductLayout-container">
+            <slot />
+        </div>
     </div>
 </template>
 <script lang='ts' setup>

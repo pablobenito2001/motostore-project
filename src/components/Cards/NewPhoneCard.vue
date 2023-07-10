@@ -25,7 +25,7 @@
         price: boolean | number;
         caption: string;
         picture: string;
-        pictures: { media: string, source: string }[];
+        pictures: { media: number, source: string }[];
     }
 
     defineProps<Props>();

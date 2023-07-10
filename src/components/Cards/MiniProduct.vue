@@ -1,6 +1,6 @@
 <template>
     <div class="MiniProduct" :class="$attrs.class" @click="navegate">
-        <img :src="props.picture" :alt="`${ props.name }' pic'`" class="MiniProduct-thumbnail">
+        <img :src="props.thumbnail" :alt="`${ props.name }' pic'`" class="MiniProduct-thumbnail">
         <div class="MiniProduct-indoBox">
             <span class="MiniProduct-price">${{ humanizedFunction }},00</span>
             <p class="MiniProduct-info">{{ props.name }}</p>
@@ -14,7 +14,7 @@
     interface Props{
         name: string;
         price: boolean | number;
-        picture: string;
+        thumbnail: string;
         codeName: string;
     }
     const props = defineProps<Props>()

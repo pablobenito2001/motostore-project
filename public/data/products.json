@@ -1,12 +1,15 @@
 [
     {
         "id": 0,
-        "name": "Motorola Moto G72",
-        "codeName": "moto_g72",
-        "price": 110999,
-        "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685767061/motostore/products/moto_g_72/thumbnail_o3alno.png",
-        "type": "smartphone",
-        "family": "motog",
+        "info": {
+            "name": "Motorola Moto G72",
+            "codeName": "moto_g72",
+            "price": 110999,
+            "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685767061/motostore/products/moto_g_72/thumbnail_o3alno.png",
+            "type": "smartphone",
+            "family": "motog",
+            "resume": "Sistema de cámaras con sensor principal de 108 MP."
+        },
         "selects": {
             "colors": ["Azul Niagara", "Blanco Brillante"],
             "storage": ["128GB"]
@@ -66,17 +69,19 @@
                 "codeName": "moto_xt220"
             }
         ],
-        "resume": "Sistema de cámaras con sensor principal de 108 MP.",
         "new": false
     },
     {
         "id": 1,
-        "name": "Motorola Edge 40 Pro",
-        "codeName": "edge_40_pro",
-        "price": 369999,
-        "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685766645/motostore/products/edge_30_pro/thumbnail_dlb7ku.png",
-        "type": "smartphone",
-        "family": "edge",
+        "info": {
+            "name": "Motorola Edge 40 Pro",
+            "codeName": "edge_40_pro",
+            "price": 369999,
+            "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685766645/motostore/products/edge_30_pro/thumbnail_dlb7ku.png",
+            "type": "smartphone",
+            "resume": "Procesador Snapdragon® 8 Gen 2, el más avanzado hasta el momento.",
+            "family": "edge"
+        },
         "selects": {
             "colors": ["negro cuarzo"],
             "storage": ["256GB"]
@@ -138,17 +143,19 @@
                 "codeName": "moto_xt220"
             }
         ],
-        "resume": "Procesador Snapdragon® 8 Gen 2, el más avanzado hasta el momento.",
         "new": true
     },
     {
         "id": 2,
-        "name": "Motorola Moto G23",
-        "codeName": "moto_g23",
-        "price": 81999,
-        "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685767868/motostore/products/moto_g23/thumbnail_q2mw2q.png",
-        "type": "smartphone",
-        "family": "motog",
+        "info": {
+            "name": "Motorola Moto G23",
+            "codeName": "moto_g23",
+            "price": 81999,
+            "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685767868/motostore/products/moto_g23/thumbnail_q2mw2q.png",
+            "type": "smartphone",
+            "resume": "Sistema de cámaras de 50 MP + Ultra Gran Angular + Macro.",
+            "family": "motog"
+        },
         "selects": {
             "colors": ["Azul Cristal", "Blanco"],
             "storage": ["128GB"]
@@ -207,17 +214,19 @@
                 "codeName": "buds_085"
             }
         ],
-        "resume": "Sistema de cámaras de 50 MP + Ultra Gran Angular + Macro.",
         "new": true
     },
     {
         "id": 3,
-        "name": "Motorola Moto G42",
-        "codeName": "moto_g42",
-        "price": 92999,
-        "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685769009/motostore/products/moto_g42/thumbnail_nbbmk9.png",
-        "type": "smartphone",
-        "family": "motog",
+        "info": {
+            "name": "Motorola Moto G42",
+            "codeName": "moto_g42",
+            "price": 92999,
+            "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685769009/motostore/products/moto_g42/thumbnail_nbbmk9.png",
+            "type": "smartphone",
+            "resume": "Colores de calidad cinematográfica.",
+            "family": "motog"
+        },
         "selects": {
             "colors": ["Verde Atlántico", "Rosa Metálico"],
             "storage": ["128GB"]
@@ -275,17 +284,19 @@
                 "codeName": "funda_g42_premiun"
             }
         ],
-        "resume": "Colores de calidad cinematográfica.",
         "new": false
     },
     {
         "id": 4,
-        "name": "Motorola Moto E32",
-        "codeName": "moto_e32",
-        "price": 65999,
-        "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685769402/motostore/products/moto_e32/thumbnail_a0jkuh.png",
-        "type": "smartphone",
-        "family": "motoe",
+        "info": {
+            "name": "Motorola Moto E32",
+            "codeName": "moto_e32",
+            "price": 65999,
+            "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685769402/motostore/products/moto_e32/thumbnail_a0jkuh.png",
+            "type": "smartphone",
+            "family": "motoe",
+            "resume": "Con un diseño elegante, pero resistente."
+        },
         "selects": {
             "colors": ["Gris", "Plata"],
             "storage":  ["64GB"]
@@ -345,17 +356,19 @@
                 "codeName": "buds_085"
             }
         ],
-        "resume": "Con un diseño elegante, pero resistente.",
         "new": false
     },
     {
         "id": 5,
-        "name": "Motorola Edge 30 Fusion SE",
-        "codeName": "edge_30_fusion_se",
-        "price": 269999,
-        "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685770198/motostore/products/moto_edge30_fusion_SE/thumbnail_dm97y4.png",
-        "type": "smartphone",
-        "family": "edge",
+       "info": {
+            "name": "Motorola Edge 30 Fusion SE",
+            "codeName": "edge_30_fusion_se",
+            "price": 269999,
+            "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685770198/motostore/products/moto_edge30_fusion_SE/thumbnail_dm97y4.png",
+            "type": "smartphone",
+            "resume": "Lucí el color 2023 de Pantone 'Viva Magenta' y su terminación en cuero vegano.",
+            "family": "edge"
+       },
         "selects": {
             "colors": ["Viva Magenta"],
             "storage": ["256GB"]
@@ -419,17 +432,19 @@
                 "codeName": "moto_xt220"
             }
         ],
-        "resume": "Lucí el color 2023 de Pantone 'Viva Magenta' y su terminación en cuero vegano.",
         "new": false
     },
     {
         "id": 6,
-        "name": "Motorola Moto E13",
-        "codeName": "moto_e13",
-        "price": 48999,
-        "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685771280/motostore/products/moto_e13/thumbnail_objdnc.png",
-        "type": "smartphone",
-        "family": "motoe",
+        "info": {
+            "name": "Motorola Moto E13",
+            "codeName": "moto_e13",
+            "price": 48999,
+            "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685771280/motostore/products/moto_e13/thumbnail_objdnc.png",
+            "type": "smartphone",
+            "family": "motoe",
+            "resume": "Sistema de cámaras de 50 MP y tecnología Quad Pixel."
+        },
         "selects": {
             "colors": ["Azul Turquesa", "Natural"],
             "storage": ["64GB"]
@@ -489,17 +504,19 @@
                 "codeName": "buds_085"
             }
         ],
-        "resume": "Sistema de cámaras de 50 MP y tecnología Quad Pixel.",
         "new": true
     },
     {
         "id": 7,
-        "name": "Motorola Edge 30 Neo",
-        "codeName": "edge_30_neo",
-        "price": 159999,
-        "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685771572/motostore/products/edge_30_neo/thumbnail_xnz01e.png",
-        "type": "smartphone",
-        "family": "edge",
+        "info": {
+            "name": "Motorola Edge 30 Neo",
+            "codeName": "edge_30_neo",
+            "price": 159999,
+            "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685771572/motostore/products/edge_30_neo/thumbnail_xnz01e.png",
+            "type": "smartphone",
+            "resume": "Compacto. Colorido. Todo lo que imaginás",
+            "family": "edge"
+        },
         "selects": {
             "colors": ["Very Peri", "Ice Palace", "Black Onyx"],
             "storage": ["128GB"]
@@ -551,18 +568,20 @@
                 "codeName": "buds_085"
             }
         ],
-        "resume": "Compacto. Colorido. Todo lo que imaginás",
         "pictures": [],
         "new": false
     },
     {
         "id": 8,
-        "name": "Motorola Edge 30 Fusion",
-        "codeName": "edge_30_fusion",
-        "price": 249999,
-        "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685816779/motostore/products/moto_edge30_fusion/thumbnail_pjrtak.png",
-        "type": "smartphone",
-        "family": "edge",
+        "info": {
+            "name": "Motorola Edge 30 Fusion",
+            "codeName": "edge_30_fusion",
+            "price": 249999,
+            "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685816779/motostore/products/moto_edge30_fusion/thumbnail_pjrtak.png",
+            "type": "smartphone",
+            "resume": "Increíblemente delgado. Perfectamente balanceado.",
+            "family": "edge"
+       },
         "selects": {
             "colors": ["Blanco Opalo", "Negro Quarzo", "Azul Lázuli"],
             "storage": ["256GB"]
@@ -614,18 +633,20 @@
                 "codeName": "moto_xt220"
             }
         ],
-        "resume": "Increíblemente delgado. Perfectamente balanceado.",
         "pictures": [],
         "new": false
     },
     {
         "id": 9,
-        "name": "Motorola Edge 30 Ultra",
-        "codeName": "edge_30_ultra",
-        "price": 334999,
-        "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685821236/motostore/products/edge_30_ultra/thumbnail_r5y2sj.png",
-        "type":"smartphone",
-        "family": "edge",
+        "info": {
+            "name": "Motorola Edge 30 Ultra",
+            "codeName": "edge_30_ultra",
+            "price": 334999,
+            "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685821236/motostore/products/edge_30_ultra/thumbnail_r5y2sj.png",
+            "type":"smartphone",
+            "resume": "200 MP: la resolución más alta",
+            "family": "edge"
+        },
         "selects": {
             "colors": ["Blanco Starlight", "Negro Interestelar"],
             "storage": ["256GB"]
@@ -681,17 +702,19 @@
                 "codeName": "earbuds_3-s"
             }
         ],
-        "resume": "200 MP: la resolución más alta",
         "new": true
     },
     {
         "id": 10,
-        "name": "Motorola Moto G32",
-        "codeName": "moto_g32",
-        "price": 86999,
-        "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685822375/motostore/products/moto_g32/thumbnail_zgnaif.png",
-        "type": "smartphone",
-        "family": "motog",
+        "info": {
+            "name": "Motorola Moto G32",
+            "codeName": "moto_g32",
+            "price": 86999,
+            "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685822375/motostore/products/moto_g32/thumbnail_zgnaif.png",
+            "type": "smartphone",
+            "resume": "Sonido multidimensional Dolby Atmos y altavoces estéreo.",
+            "family": "motog"
+        },
         "selects": {
             "colors": ["Gris Mineral", "Plata Satinado", "Rosa Pastel"],
             "storage": ["128GB"]
@@ -739,18 +762,20 @@
                 "codeName": "moto_xt220"
             }
         ],
-        "resume": "Sonido multidimensional Dolby Atmos y altavoces estéreo.",
         "pictures": [],
         "new": false
     },
     {
         "id": 11,
-        "name": "Motorola Moto E22",
-        "codeName": "moto_e22",
-        "price": 53999,
-        "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685839222/motostore/products/moto_e22/thumbnail_hsgtga.png",
-        "family":"motoe",
-        "type":"smartphone",
+        "info": {
+            "name": "Motorola Moto E22",
+            "codeName": "moto_e22",
+            "price": 53999,
+            "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685839222/motostore/products/moto_e22/thumbnail_hsgtga.png",
+            "family":"motoe",
+            "resume": "Da vida a tu contenido de entretenimiento con la pantalla fluida de 90 Hz.",
+            "type":"smartphone"
+        },
         "selects": {
             "colors": ["Azul", "Negro"],
             "storage": ["32GB"]
@@ -798,18 +823,20 @@
                 "codeName": "buds_085"
             }
         ],
-        "resume": "Da vida a tu contenido de entretenimiento con la pantalla fluida de 90 Hz.",
         "pictures": [],
         "new": false
     },
     {
         "id": 12,
-        "name": "Motorola Moto G13",
-        "codeName": "moto_g13",
-        "price": 71999,
-        "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685840058/motostore/products/moto_g13/thumbnail_gams6b.png",
-        "family": "motog",
-        "type": "smartphone",
+        "info": {
+            "name": "Motorola Moto G13",
+            "codeName": "moto_g13",
+            "price": 71999,
+            "thumbnail": "https://res.cloudinary.com/dxagsphno/image/upload/v1685840058/motostore/products/moto_g13/thumbnail_gams6b.png",
+            "family": "motog",
+            "resume": "Sistema de cámaras de 50 MP y tecnología Quad Pixel.",
+            "type": "smartphone"
+        },
         "selects": {
             "colors": ["Gris Oxford", "Rosa Palido"],
             "storage": ["64GB"]
@@ -857,7 +884,6 @@
                 "codeName": "buds_085"
             }
         ],
-        "resume": "Sistema de cámaras de 50 MP y tecnología Quad Pixel.",
         "pictures": [],
         "new": true
     }
