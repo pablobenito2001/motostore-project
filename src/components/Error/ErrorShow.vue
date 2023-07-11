@@ -7,7 +7,7 @@
 <script lang='ts' setup>
     interface Props{
         message: string;
-        cause?: string;
+        cause?: string | unknown;
     }
 
     const props = defineProps<Props>();

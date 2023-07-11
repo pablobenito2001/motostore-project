@@ -9,7 +9,10 @@
             v-model:max-price="maxPrice"/>
         </template>
         <template #content>
-            <ErrorShow v-if="error" :message="error.message" :cause="error.cause"/>
+            <ErrorShow 
+            v-if="error" 
+            :message="error.message" 
+            :cause="error.cause"/>
             <LoaderSections v-else-if="!loading"/>
             <template v-else>
                 <ErrorShow v-if="dataFiltered.length === 0" message="No se encontraron productos."/>

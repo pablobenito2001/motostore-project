@@ -16,7 +16,7 @@
                 :src="img" 
                 alt="Product's image"
                 class="ImageSlider-prevImage"
-                :class="[ index === 0 ? 'ImageSlider--selected' : '']"
+                :class="[ index === 0 && 'ImageSlider--selected']"
                 @click.self="move">
             </div>
         </div>
@@ -74,14 +74,21 @@
             align-items: center;
             flex-wrap: nowrap;
             transition: transform .6s cubic-bezier(0.215, 0.610, 0.355, 1);
+            @media screen and (max-width: 850px) {
+                overflow-x: scroll;
+                scroll-snap-type: x proximity;  
+            }
         }
         &-image{
             flex: 1 0 auto;
+            @media screen and (max-width: 850px){
+                scroll-snap-align: center;
+            }
         }
         &-preview{
             overflow: hidden;
             background-color: var(--white);
-            @media screen and (max-width: 400px){
+            @media screen and (max-width: 850px){
                 display: none;
             }
         }

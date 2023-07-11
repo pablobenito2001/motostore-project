@@ -13,7 +13,11 @@
                 @keypress.enter="emitMin" 
                 ref="minInput"
                 maxlength="20">
-                <span class="PriceInput-reset" @click.self="resetMin()">X</span>
+                <button class="PriceInput-reset" @click="resetMin">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30">}
+                        <path d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/>
+                    </svg>
+                </button>
             </div>
             <span class="PriceInput-line"></span>
             <div class="PriceInput-inputBox">
@@ -26,7 +30,11 @@
                 step="100" 
                 @keypress.enter="emitMax" 
                 ref="maxInput">
-                <span class="PriceInput-reset" @click.self="resetMax">X</span>
+                <button class="PriceInput-reset" @click="resetMax">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30">
+                        <path d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/>
+                    </svg>
+                </button>
             </div>
         </div>
     </div>
@@ -110,11 +118,11 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            right: .3125rem;
+            right: 0px;
             font-size: 1.5em;
             color: var(--blue);
             background-color: var(--white);
-            padding: 5px;
+            padding: .125rem;
         }
         &-box{
             display: flex;
