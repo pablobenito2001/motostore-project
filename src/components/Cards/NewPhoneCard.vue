@@ -9,11 +9,12 @@
             <img :src="picture" :alt="`${ title }'advertising'`" :title="title">
         </picture>
         <div class="NewPhone-infoBox">
-            <h3 class="NewPhone-title NewPhone-text">{{ title }}</h3>
+            <span class="NewPhone-branch NewPhone-text">Motorola</span>
+            <h3 class="NewPhone-title NewPhone-text">{{ title.toLocaleLowerCase().replace('motorola', '') }}</h3>
             <p class="NewPhone-caption">{{ caption }}</p>
-            <GeneralButton v-if="price" @click="() => router.push(`/products/${codeName}`)">Ver mas</GeneralButton>  
             <span v-if="price" class="NewPhone-title NewPhone-text">${{ price }}</span>
             <span v-else class="NewPhone-title NewPhone-text">Proximamente</span>
+            <GeneralButton v-if="price" @click="() => router.push(`/products/${codeName}`)">Ver mas</GeneralButton>  
         </div>
     </article>
 </template>
@@ -39,16 +40,18 @@
             width: 100%;
         }
         &-infoBox{
-            padding: .625rem;
+            padding: 2.1875rem 2.8125rem;
             position: absolute;
             top: 0;
             left: 0;
-            max-width: 850px;
+            max-width: 53.125rem;
+            width: 100%;
             background-color: var(--white);
-            @media screen and (max-width: 850px) {
+            @media screen and (max-width: 980px) {
                 max-width: 27.5rem;
+                padding: 15px;
             }
-            @media screen and (max-width: 400px) {
+            @media screen and (max-width: 480px) {
                 max-width: 18.75rem;
             }
         }
@@ -57,16 +60,20 @@
             font-weight: 700;
         }
         &-title{
-            text-transform: uppercase;
+            display: block;
+            text-transform: capitalize;
             font-size: clamp(1.5625em, 4vw, 4em);
             color: var(--black);
+            margin: 0 0 1.5625rem 0;
+        }
+        &-branch{
+            display: inline-block;
+            font-size: 2em;
         }
         &-caption{
             line-height: 1em;
             font-family: var(--secundary-font);
-            font-weight: lighter;
-            font-size: clamp(1em, 3vw, 3em);
-            text-transform: lowercase;
+            font-size: 1.5em;
             margin-bottom: 1.25rem;
         }
     }

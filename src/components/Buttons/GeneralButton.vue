@@ -16,7 +16,7 @@
         cursor: pointer;
         transition: filter 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
         &:hover{
-            filter: brightness(150%);
+            filter: brightness(120%);
         }
         @media screen and (max-width: 850px){
             padding: .625rem 1.25rem;

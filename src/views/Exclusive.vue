@@ -93,7 +93,6 @@
 <script lang='ts' setup>
     import NavModule from '../modules/Nav/NavModule.vue';
     import LayoutGlobal from '../layouts/Global/LayoutGlobal.vue';
-    import TitleGlobal from '../layouts/Global/TitleGlobal.vue';
     import GeneralButton from '../components/Buttons/GeneralButton.vue';
     import Footer from '../modules/Footer/Footer.vue';
 </script>
