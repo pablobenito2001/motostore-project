@@ -35,6 +35,7 @@
 <style lang="scss" scoped>
     .ProductView{
         padding: 4.75rem 0 0 0;
+        min-height: 100vh;
     }
     .Buy-stiky{
         padding: 5rem 0 0 0;

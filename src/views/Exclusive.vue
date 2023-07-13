@@ -71,13 +71,31 @@
                     </div>
                 </div>
             </div>
+            <div class="Imei">
+                <div class="Imei-section">
+                    <div class="Exclusive-text Exclusive-title">Buscá tu Imei y <span class="Exclusive-strong">Registra tu motorola para acceder</span></div>
+                </div>
+                <div class="Imei-section">
+                    <span class="Imei-span">Es muy simple, te contamos cómo hacerlo:</span>
+                    <ol class="Imei-list">
+                        <li class="Imei-item">Entré en "ajustes".</li>
+                        <li class="Imei-item">Hacé click en "Acerca del teléfono".</li>
+                        <li class="Imei-item">Hacé click en IMEI</li>
+                    </ol>
+                    <span class="Imei-span">Ingresalo para que podamos validarlo y registrate.</span>
+                    <GeneralButton>Ingresá</GeneralButton>
+                </div>
+            </div>
         </main>
     </LayoutGlobal> 
+    <Footer />
 </template>
 <script lang='ts' setup>
     import NavModule from '../modules/Nav/NavModule.vue';
     import LayoutGlobal from '../layouts/Global/LayoutGlobal.vue';
     import TitleGlobal from '../layouts/Global/TitleGlobal.vue';
+    import GeneralButton from '../components/Buttons/GeneralButton.vue';
+    import Footer from '../modules/Footer/Footer.vue';
 </script>
 <style lang='scss' scoped>
     .Exclusive{
@@ -98,6 +116,9 @@
         &-main{
             margin: 1.5625rem 0;
             position: relative;
+        }
+        &-strong{
+            font-weight: bold;
         }
         &-p{
             font-size: clamp(1em, 1.3vw,1.3em);
@@ -171,5 +192,25 @@
             color: var(--white);
             line-height: 100%;
         }   
+    }
+
+    .Imei{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        gap: .625rem;
+        margin: 15px 0 0 0;
+        &-span{
+            font-size: 1.2em;
+            text-transform: uppercase;
+        }
+        &-item{
+            list-style: decimal;
+            list-style-position: inside;
+            margin: 10px 0;
+        }
+        @media screen and (max-width: 850px) {
+            grid-template-columns: 1fr;
+        }
     }
 </style>
