@@ -9,9 +9,9 @@
                 <span class="Header-text">nuevo</span>
             </div>
             <div class="Header-new">
-                <h2 class="Header-text Header-newPhone">motorola edge 40 pro</h2>
-                <video class="Header-video" autoplay muted loop poster="../../assets/img/edge_40_pro_presentation.png">
-                    <source src="/video/edge_40_pro_min.mp4" type="video/mp4">
+                <h2 class="Header-text Header-newPhone">motorola razr 40 ultra</h2>
+                <video class="Header-video" autoplay muted loop poster="https://res.cloudinary.com/dxagsphno/image/upload/v1689283728/motostore/commons/Motorola_Razr_40_Ultra_pgutkq.jpg">
+                    <source src="/video/razr_40_ultra.mp4" type="video/mp4">
                 </video>
             </div>
         </div>

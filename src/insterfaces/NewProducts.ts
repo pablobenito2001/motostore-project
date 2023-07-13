@@ -1,13 +1,13 @@
-export interface NewProneAPI{
+export interface NewProne{
     title: string;
     text: string;
-    price: boolean,
+    price: number | boolean,
     picture: string,
-    pictures: NewPhoneAPIMediaPictures[];
+    pictures: NewPhoneMediaPictures[];
     codename: string;
 }
 
-export interface NewPhoneAPIMediaPictures{
+export interface NewPhoneMediaPictures{
        media: number;
        source: string;
 }

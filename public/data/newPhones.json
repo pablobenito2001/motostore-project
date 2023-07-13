@@ -6,7 +6,7 @@
         "picture": "https://res.cloudinary.com/dxagsphno/image/upload/v1685730040/motostore/newPhones/edge_40/media_default.png",
         "pictures": [
             {
-                "media": 980,
+                "media": 480,
                 "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685729952/motostore/newPhones/edge_40/media_400px.png"
             },
             {
@@ -23,7 +23,7 @@
         "picture": "https://res.cloudinary.com/dxagsphno/image/upload/v1685735204/motostore/newPhones/edge_40_pro/media_default.jpg",
         "pictures": [
             {
-                "media": 400,
+                "media": 480,
                 "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685735396/motostore/newPhones/edge_40_pro/medio_400.png"
             },
             {
@@ -40,7 +40,7 @@
         "picture": "https://res.cloudinary.com/dxagsphno/image/upload/v1685736672/motostore/newPhones/edge_30_ultra/media_default.png",
         "pictures": [
             {
-                "media": 400,
+                "media": 480,
                 "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685736782/motostore/newPhones/edge_30_ultra/media_400.png"
             },
             {
