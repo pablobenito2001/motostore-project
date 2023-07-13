@@ -4,6 +4,7 @@ export interface NewProneAPI{
     price: boolean,
     picture: string,
     pictures: NewPhoneAPIMediaPictures[];
+    codename: string;
 }
 
 export interface NewPhoneAPIMediaPictures{

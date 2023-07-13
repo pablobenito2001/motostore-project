@@ -22,10 +22,6 @@ export const router = createRouter({
         {
             path: '/exclusive',
             component: () => import('../views/Exclusive.vue')
-        },
-        {
-            path: '/stores',
-            component: () => import('../views/Stores.vue') 
         }
     ]
 })

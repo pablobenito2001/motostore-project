@@ -10,6 +10,7 @@
         :pictures="phone.pictures"
         :picture="phone.picture"
         :price="phone.price"
+        :code-name="phone.codename"
         />
     </ColumnLayout> 
 </template>

@@ -13,7 +13,8 @@
                 "media": 850,
                 "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685729823/motostore/newPhones/edge_40/media_850px.png"
             }
-        ]
+        ],
+        "codename": "edge_40"
     },
     {
         "title": "Motorola Edge 40 pro",
@@ -29,7 +30,8 @@
                 "media": 850,
                 "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685735298/motostore/newPhones/edge_40_pro/media_850.png"
             }
-        ]
+        ],
+        "codename": "edge_40_pro"
     },
     {
         "title": "Motorola Edge 30 Ultra",
@@ -45,6 +47,7 @@
                 "media": 850,
                 "source": "https://res.cloudinary.com/dxagsphno/image/upload/v1685736741/motostore/newPhones/edge_30_ultra/media_850.png"
             }
-        ]
+        ],
+        "codename": "edge_30_ultra"
     }
 ]

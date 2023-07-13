@@ -4,7 +4,6 @@
             <li class="NavMobile-link"><router-link to="/">Inicio</router-link></li>
             <li class="NavMobile-link"><router-link to="/products">Productos</router-link></li>
             <li class="NavMobile-link"><router-link to="/exclusive">Exclusive</router-link></li>
-            <li class="NavMobile-link"><router-link to="/stores">Stores</router-link></li>
         </ul>
     </div>
 </template>

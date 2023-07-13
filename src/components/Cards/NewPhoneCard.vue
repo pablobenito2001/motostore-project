@@ -11,13 +11,14 @@
         <div class="NewPhone-infoBox">
             <h3 class="NewPhone-title NewPhone-text">{{ title }}</h3>
             <p class="NewPhone-caption">{{ caption }}</p>
-            <GeneralButton>Ver mas</GeneralButton>  
+            <GeneralButton v-if="price" @click="() => router.push(`/products/${codeName}`)">Ver mas</GeneralButton>  
             <span v-if="price" class="NewPhone-title NewPhone-text">${{ price }}</span>
             <span v-else class="NewPhone-title NewPhone-text">Proximamente</span>
         </div>
     </article>
 </template>
 <script lang='ts' setup>
+    import { router } from '../../router/router';
     import GeneralButton from '../Buttons/GeneralButton.vue';
 
     interface Props {
@@ -26,9 +27,10 @@
         caption: string;
         picture: string;
         pictures: { media: number, source: string }[];
+        codeName: string;
     }
 
-    defineProps<Props>();
+    defineProps<Props>();    
 </script>
 <style lang='scss' scoped>
     .NewPhone{
