@@ -1,5 +1,5 @@
 <template>
-    <TitleGlobal>Nuevo</TitleGlobal>
+    <TitleGlobal>Novedades</TitleGlobal>
     <span v-if="error">{{ error.message }}</span>
     <LoaderSections v-else-if="!loading"/>
     <ColumnLayout v-else>

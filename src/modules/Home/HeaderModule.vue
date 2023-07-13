@@ -11,7 +11,7 @@
             <div class="Header-new">
                 <h2 class="Header-text Header-newPhone">motorola edge 40 pro</h2>
                 <video class="Header-video" autoplay muted loop poster="../../assets/img/edge_40_pro_presentation.png">
-                    <source src="/video/edge_40_pro_min.mp4" type="video/mp4" media="(max-width: 850px)">
+                    <source src="/video/edge_40_pro_min.mp4" type="video/mp4">
                 </video>
             </div>
         </div>
@@ -41,7 +41,8 @@
             flex-wrap: wrap;
         }
         &-title{
-            font-size: clamp(3.5em, 11.625vw, 11.625em);
+            text-transform: uppercase;
+            font-size: clamp(2.5em, 11.625vw, 11.625em);
         }
         &-region{
             font-size: 1.25em;
@@ -57,7 +58,8 @@
             font-size: clamp(1em, 1.8vw, 1.8em);
         }
         &-newPhone{
-            font-size: clamp(2em, 4.6875vw, 4.6875em);
+            text-transform: uppercase;
+            font-size: clamp(1.4em, 4.6875vw, 4.6875em);
             margin-bottom: .625rem;
         }
         &-video{

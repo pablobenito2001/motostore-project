@@ -30,29 +30,43 @@
 <style lang='scss' scoped>
     .ProductsCard{
         padding: .9375rem;
-        border: solid 1px var(--black);
-        border-radius: .3125rem;
+        background-color: var(--white);
         cursor: pointer;
-        transition: background-color .6s cubic-bezier(0.075, 0.82, 0.165, 1);
-        &:hover{
-            background-color: var(--alpha-blue);
+        overflow: hidden;
+        position: relative;
+        &::before{
+            content: "Ver Producto";
+            width: 100%;
+            padding: 20px 10px;
+            position: absolute;
+            bottom: -64px;
+            left: 0;
+            background-color: var(--blue);
+            z-index: 2;
+            text-transform: uppercase;
+            color: var(--white);
+            font-size: 1.2em;
+            transition: all 100 ms cubic-bezier(0.075, 0.82, 0.165, 1);
+            opacity: 0;
         }
-        &:hover > .ProductsCard-image{
-            transform: translateY(-0.3125rem);
+        &:hover::before{
+            bottom: 0;
+            opacity: 1;
         }
         &-image{
             width: 100%;
-            max-height: 400px;
+            max-height: 25rem;
             object-fit: contain;
-            transition: transform .6s cubic-bezier(0.075, 0.82, 0.165, 1);
+            background-color: var(--grey);
         }
         &-title{
-            font-size: 2em;
+            font-size: 1.5em;
             font-weight: 600;
             line-height: 100%;
             margin: .625rem 0;
+            text-transform: uppercase;
             &--price{
-                font-size: 1.3em
+                font-size: 1.3em;
             }
         }
         &-resume{

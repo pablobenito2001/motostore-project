@@ -36,4 +36,10 @@
     .ProductView{
         padding: 4.75rem 0 0 0;
     }
+    .Buy-stiky{
+        padding: 5rem 0 0 0;
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
 </style>

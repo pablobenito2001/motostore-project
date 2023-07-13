@@ -110,7 +110,7 @@
         }
         &-slider{
             position: absolute;
-            padding: 10px;
+            padding: .625rem;
             z-index: 2;
             background-color: var(--blue);
             cursor: pointer;

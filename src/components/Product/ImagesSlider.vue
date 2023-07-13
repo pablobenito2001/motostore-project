@@ -76,7 +76,7 @@
             transition: transform .6s cubic-bezier(0.215, 0.610, 0.355, 1);
             @media screen and (max-width: 850px) {
                 overflow-x: scroll;
-                scroll-snap-type: x proximity;  
+                scroll-snap-type: x mandatory;  
             }
         }
         &-image{

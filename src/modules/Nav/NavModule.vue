@@ -14,7 +14,7 @@
                 <ul class="Nav-linkBox">
                     <li class="Nav-link"><RouterLink to="/">Inicio</RouterLink></li>
                     <li class="Nav-link"><RouterLink to="/products">Productos</RouterLink></li>
-                    <li class="Nav-link">Exclusive</li>
+                    <li class="Nav-link"><RouterLink to="/exclusive">Exclusive</RouterLink></li>
                     <li class="Nav-link">Stores</li>
                 </ul>
                 <div class="Nav-menu" @click="() => open = !open">

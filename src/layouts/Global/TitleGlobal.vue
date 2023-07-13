@@ -17,9 +17,9 @@
         &-text{
             line-height: 100%;
             font-weight: 700;
-            font-size: clamp(3.7em, 9vw, 9em);
+            font-size: clamp(2.8em, 9vw, 9em);
             color: var(--black);
-            text-transform: lowercase;
+            text-transform: uppercase;
             padding: .625rem;
         }
     }

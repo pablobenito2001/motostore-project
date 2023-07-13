@@ -51,11 +51,11 @@
             }
         }
         &-text{
-            line-height: normal;
+            line-height: 100%;
             font-weight: 700;
         }
         &-title{
-            text-transform: lowercase;
+            text-transform: uppercase;
             font-size: clamp(1.5625em, 4vw, 4em);
             color: var(--black);
         }
@@ -64,6 +64,7 @@
             font-family: var(--secundary-font);
             font-weight: lighter;
             font-size: clamp(1em, 3vw, 3em);
+            text-transform: lowercase;
             margin-bottom: 1.25rem;
         }
     }

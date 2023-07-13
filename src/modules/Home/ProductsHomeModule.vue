@@ -46,7 +46,7 @@
 <style lang='scss' scoped>
     .Products{
         @media screen and (max-width: 850px){
-            padding: 2.1875rem 0;
+            padding: var(--pad) 0;
         }
     }
 </style>

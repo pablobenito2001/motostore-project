@@ -100,6 +100,7 @@
             overflow: hidden;
             height: 0;
             padding: 0;
+            background-color: var(--white);
             transition: height .6s cubic-bezier(0.075, 0.82, 0.165, 1);
             @media screen and (min-width: 850px) {
                 height: auto;
