@@ -10,6 +10,7 @@
     /* padding */
     --pad: 2.1875rem;
     --max-width: 125rem;
+    --full-width: 125rem;
 }
 @media screen and (max-width: 850px) {
     :root{

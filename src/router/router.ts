@@ -5,23 +5,23 @@ export const router = createRouter({
     routes: [
         {
             path: '/',
-            component: () => import('../views/Home.vue')
+            component: () => import('../views/Home/Home.vue')
         },
         {
             path: '/products/:product',
-            component: () => import('../views/Product.vue')
+            component: () => import('../views/Product/Product.vue')
         },
         {
             path: '/products',
-            component: () => import('../views/Products.vue')
+            component: () => import('../views/ProductsDashboard/ProductsDashboard.vue')
         },
         {
             path: '/cart',
-            component: () => import('../views/ShopCart.vue')
+            component: () => import('../views/Cart/Cart.vue')
         },
         {
             path: '/exclusive',
-            component: () => import('../views/Exclusive.vue')
+            component: () => import('../views/Exclusive/Exclusive.vue')
         }
     ]
 })
