@@ -1,21 +1,22 @@
 <template>
     <div class="Ticked" :class="$attrs.class">
-        <h4 class="Ticked-title">Completa tu Compra</h4>
-        <ul class="Ticked-productBox">
+        <div class="Ticked-title">Completa tu Compra</div>
+        <div>
             <span class="Ticked-subtitle">Productos:</span>
-            <li
-            v-for="item in shop"
-            :key="item.id"
-            class="Ticked-product"
-            >
-                {{ item.productName }}<span class="Ticked-amount"> x {{ item.amount }}</span>
-            </li>
-        </ul>
+            <ul class="Ticked-productBox">
+                <li
+                v-for="item in shop"
+                :key="item.id"
+                class="Ticked-product">
+                    {{ item.productName }}<span class="Ticked-amount"> x {{ item.amount }}</span>
+                </li>
+            </ul>
+        </div>
         <div>
             <span class="Ticked-subtitle">Precio Total:</span>
             <span class="Ticked-price">${{ humanizedFunction }},00</span>
         </div>
-        <GeneralButton class="Ticked-button">PAGAR</GeneralButton>
+        <GeneralButton class="Ticked-button">Pagar</GeneralButton>
     </div>
 </template>
 <script lang='ts' setup>

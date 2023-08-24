@@ -4,20 +4,22 @@
         <select :id="props.id" class="Select-select" @change="emitChange">
             <option value="all" class="Select-option" select>Todo</option>
             <option 
-            v-for="(op, index) in options"
+            v-for="(op, index) in props.options"
             :key="index"            
-            :value="op"
+            :value="op.value"
             class="Select-option" >
-                {{ op }}
+                {{ op.name }}
             </option>
         </select>
     </div>
 </template>
 <script lang='ts' setup>
+    import { Label } from '../../insterfaces/Label';
+ 
     interface Props{
         name: string;
         id: string;
-        options: string[];
+        options: Label[];
         label: string;
     }
 

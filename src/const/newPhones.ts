@@ -4,7 +4,7 @@ export const newPhones: NewProne[] = [
     {
         "title": "Motorola Razr 40 Ultra",
         "text": "Diseño exclusivo con pantalla flexible de 6.9” y bisagra “gota” sin espacios entre sus lados.",
-        "price": false,
+        "price": 649999,
         "picture": "https://res.cloudinary.com/dxagsphno/image/upload/v1689284250/motostore/newPhones/razr_40_ultra/Motorola_Razr_40_Ultra_r3hlt6.png",
         "pictures": [
             {

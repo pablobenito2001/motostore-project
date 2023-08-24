@@ -12,13 +12,13 @@
             id="selectFamily" 
             label="Familia:" 
             name="famuly" 
-            :options="family" 
+            :options="familyProducts" 
             @emitChange="emitFamily"/>
             <SelectInput 
             id="selectType" 
             label="Tipo:" 
             name="type" 
-            :options="type" 
+            :options="typeProducts" 
             @emitChange="emitType"/>
             <PriceInput 
             label="Precio:" 
@@ -29,20 +29,10 @@
 </template> 
 <script lang='ts' setup>
     import { ref } from 'vue';
+    import { familyProducts, typeProducts } from '../../../const/labelValues';
     import SearchInput from '../../../components/Input/SearchInput.vue';
     import SelectInput from '../../../components/Input/SelectInput.vue';
     import PriceInput from '../../../components/Input/PriceInput.vue';
-
-    const family: string[] = [
-        'motog',
-        'motoe',
-        'edge'
-    ]
-    const type: string[] = [
-        "smartphone",
-        "tv",
-        "accesories"
-    ]
 
     // props define
     defineProps({

@@ -2,24 +2,25 @@
     <article class="NewPhone">
         <picture class="NewPhone-picture">
             <source
-            v-for="pic in pictures"
+            v-for="pic in props.pictures"
             :srcset="pic.source"
             :media="`(max-width: ${pic.media}px)`"
             >
-            <img :src="picture" :alt="`${ title }'advertising'`" :title="title">
+            <img :src="props.picture" :alt="`${ props.title }'advertising'`" :title="props.title">
         </picture>
         <div class="NewPhone-infoBox">
             <span class="NewPhone-branch NewPhone-text">Motorola</span>
             <h3 class="NewPhone-title NewPhone-text">{{ title.toLocaleLowerCase().replace('motorola', '') }}</h3>
-            <p class="NewPhone-caption">{{ caption }}</p>
-            <span v-if="price" class="NewPhone-title NewPhone-text">${{ price }}</span>
+            <p class="NewPhone-caption">{{ props.caption }}</p>
+            <span v-if="props.price" class="NewPhone-title NewPhone-text">${{ humanizedFunction }}</span>
             <span v-else class="NewPhone-title NewPhone-text">Proximamente</span>
-            <GeneralButton v-if="price" @click="() => router.push(`/products/${codeName}`)">Ver mas</GeneralButton>  
+            <GeneralButton v-if="props.price" @click="() => router.push(`/products/${ props.codeName }`)">Ver mas</GeneralButton>  
         </div>
     </article>
 </template>
 <script lang='ts' setup>
     import { router } from '../../../router/router';
+    import { useHumanizedPrice } from '../../../composables/useHumanizedPrice';
     import GeneralButton from '../../../components/Buttons/GeneralButton.vue';
 
     interface Props {
@@ -31,7 +32,8 @@
         codeName: string;
     }
 
-    defineProps<Props>();    
+    const props = defineProps<Props>();    
+    const { humanizedFunction } = useHumanizedPrice(props.price)
 </script>
 <style lang='scss' scoped>
     .NewPhone{

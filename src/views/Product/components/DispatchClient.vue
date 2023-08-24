@@ -64,6 +64,7 @@
     import { ref } from 'vue';
     import { useShopCart } from '../../../store/useShopcCart';
     import { useHumanizedPrice } from '../../../composables/useHumanizedPrice';
+    import { router } from '../../../router/router';
 
     import GeneralButton from '../../../components/Buttons/GeneralButton.vue';
     import RadioInput from '../../../components/Input/RadioInput.vue';
@@ -130,16 +131,21 @@
         return [finalProduct, ...extraProducts];
     }
 
-    // update shop cart in global storage(pinia)
+    // update shop cart in global storage(pinia) & go to cart
+    function goToCart(){
+        router.push('/cart')
+    }
+
     function updateShopCart(): void{
         if(colorSelect.value || storageSelect.value){
             const product: FinalProduct[] = createFinalProduct();
             addProduct(product);
+            goToCart();
         }else{
             isEmpty.value = true;
             setTimeout(() => {
                 isEmpty.value = false
-            }, 3000)
+            }, 3000);
         }
     }
 </script>
